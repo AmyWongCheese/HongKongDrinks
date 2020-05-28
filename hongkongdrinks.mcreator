@@ -1,0 +1,1865 @@
+{
+  "id_map": {
+    "ENTITY": 44
+  },
+  "mod_elements": [
+    {
+      "name": "VitaLemonTea",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YeungGwongLemonTea",
+      "type": "food",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YeungGwongLemonTeaRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaLemonTeaRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaChocolateMilk",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HongKongDrinks",
+      "type": "tab",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaLemonTeaFoodEaten",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaChocoMilkRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaLemonTeaEntity",
+      "type": "mob",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 7,
+        "1": 8
+      }
+    },
+    {
+      "name": "VitaLemonTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaLemonTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaChocoMilkEntity",
+      "type": "mob",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 9,
+        "1": 10
+      }
+    },
+    {
+      "name": "VitaChocoMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaChocolateMilkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGLemonTeaEntity",
+      "type": "mob",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 11,
+        "1": 12
+      }
+    },
+    {
+      "name": "YGLemonTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YeungGwongLemonTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaSoyaMilk",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaSoyaMilkEntity",
+      "type": "mob",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 13,
+        "1": 14
+      }
+    },
+    {
+      "name": "VitaSoyaMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaSoyaMilkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaSoyaMilkRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaMaltSoyaMilk",
+      "type": "food",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaMaltSoyaMilkRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaMaltSoyaMilkEntity",
+      "type": "mob",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 15,
+        "1": 16
+      }
+    },
+    {
+      "name": "VitaMaltSoyaMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaMaltSoyaMilkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGMangoJuice",
+      "type": "food",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGMangoJuiceEntity",
+      "type": "mob",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 17,
+        "1": 18
+      }
+    },
+    {
+      "name": "YGMangoJuiceEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGMangoJuiceOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGMangoJuiceRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGAppleJuice",
+      "type": "food",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGAppleJuiceEntity",
+      "type": "mob",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 19,
+        "1": 20
+      }
+    },
+    {
+      "name": "YGAppleJuiceEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGAppleJuiceOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGAppleJuiceRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaBlackcurrantJuice",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaBlackcurrantJuiceEntity",
+      "type": "mob",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 21,
+        "1": 22
+      }
+    },
+    {
+      "name": "VitaBlackcurrantJuiceEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaBlackcurrantJuiceOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaBlackcurrantJuiceRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGChrysanthemumTea",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGChrysanthemumTeaEntity",
+      "type": "mob",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 23,
+        "1": 24
+      }
+    },
+    {
+      "name": "YGChrysanthemumTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGChrysanthemumTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGChrysanthemumTeaRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGCoconutMilk",
+      "type": "food",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGCoconutMilkEntity",
+      "type": "mob",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 25,
+        "1": 26
+      }
+    },
+    {
+      "name": "YGCoconutMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGCoconutMilkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGCoconutMilkRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGMelonMilk",
+      "type": "food",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGMelonMilkEntity",
+      "type": "mob",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 27,
+        "1": 28
+      }
+    },
+    {
+      "name": "YGMelonMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGMelonMilkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGMelonMilkRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGMandarinTea",
+      "type": "food",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGMandarinTeaRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGMandarinTeaEntity",
+      "type": "mob",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 29,
+        "1": 30
+      }
+    },
+    {
+      "name": "YGMandarinTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGMandarinTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGPineappleJuice",
+      "type": "food",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "YGPineappleJuiceEntity",
+      "type": "mob",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 31,
+        "1": 32
+      }
+    },
+    {
+      "name": "YGPineappleJuiceEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGPineappleJuiceEntityOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGPineappleJuiceRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaChrysanthemumTea",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaChrysanthemumTeaEntity",
+      "type": "mob",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 33,
+        "1": 34
+      }
+    },
+    {
+      "name": "VitaChrysanthemumTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaChrysanthemumTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaChrysanthemumTeaRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiMetaTea",
+      "type": "food",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiMetaTeaEntity",
+      "type": "mob",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 35,
+        "1": 36
+      }
+    },
+    {
+      "name": "TaoTiMetaTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiMetaTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiMetaTeaRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiMetaGreenTea",
+      "type": "food",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiMetaGreenTeaEntity",
+      "type": "mob",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 37,
+        "1": 38
+      }
+    },
+    {
+      "name": "TaoTiMetaGreenTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiMetaGreenTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiMetaGreenTeaRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiWhiteTea",
+      "type": "food",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiWhiteTeaEntity",
+      "type": "mob",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 39,
+        "1": 40
+      }
+    },
+    {
+      "name": "TaoTiWhiteTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiWhiteTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiWhiteTeaRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaAppleGreenTea",
+      "type": "food",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaAppleGreenTeaEntity",
+      "type": "mob",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 41,
+        "1": 42
+      }
+    },
+    {
+      "name": "VitaAppleGreenTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaAppleGreenTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaAppleGreenTeaRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "VitaHoneyLimeDrink",
+      "type": "food",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VitaHoneyLimeDrinkEntity",
+      "type": "mob",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 43,
+        "1": 44
+      }
+    },
+    {
+      "name": "VitaHoneyLimeDrinkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaHoneyLimeDrinkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaHoneyLimeDrinkRecipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "zh_tw": {
+      "entity.taotiwhiteteaentity.name": "道地極品白茶",
+      "item.vitablackcurrantjuice.name": "維他黑加侖子汁",
+      "item.vitasoyamilk.name": "維他奶",
+      "item.vitaapplegreentea.name": "Vita Apple Green Tea",
+      "entity.ygpineapplejuiceentity.name": "陽光茶餐廳菠蘿特飲",
+      "item.taotimetagreentea.name": "道地極品解綠茶",
+      "entity.taotimetateaentity.name": "道地極品解茶",
+      "item.vitamaltsoyamilk.name": "維他麥精豆奶",
+      "item.ygchrysanthemumtea.name": "陽光菊花茶",
+      "entity.ygcoconutmilkentity.name": "陽光椰子味豆奶",
+      "item.vitalemontea.name": "維他檸檬茶",
+      "item.ygmelonmilk.name": "陽光蜜瓜豆奶",
+      "item.ygapplejuice.name": "陽光蘋果汁",
+      "entity.vitaapplegreenteaentity.name": "Vita Apple Green Tea",
+      "entity.vitahoneylimedrinkentity.name": "Vita Honey Lime Drink",
+      "entity.taotimetagreenteaentity.name": "道地極品解綠茶",
+      "entity.vitachocomilkentity.name": "維他朱古力奶",
+      "entity.vitasoyamilkentity.name": "維他奶",
+      "item.yeunggwonglemontea.name": "陽光檸檬茶",
+      "itemGroup.tabhongkongdrinks": "香港飲品",
+      "entity.ygapplejuiceentity.name": "陽光蘋果汁",
+      "item.vitachrysanthemumtea.name": "維他菊花茶",
+      "entity.ygmangojuiceentity.name": "陽光芒果汁",
+      "item.taotiwhitetea.name": "道地極品白茶",
+      "entity.yglemonteaentity.name": "陽光檸檬茶",
+      "entity.vitamaltsoyamilkentity.name": "維他麥精豆奶",
+      "item.ygpineapplejuice.name": "陽光茶餐廳菠蘿特飲",
+      "item.vitachocolatemilk.name": "維他朱古力奶",
+      "entity.vitachrysanthemumteaentity.name": "維他菊花茶",
+      "item.ygmandarintea.name": "陽光柑香茶",
+      "entity.ygchrysanthemumteaentity.name": "陽光菊花茶",
+      "entity.vitablackcurrantjuiceentity.name": "維他黑加侖子汁",
+      "entity.ygmelonmilkentity.name": "陽光蜜瓜豆奶",
+      "item.vitahoneylimedrink.name": "Vita Honey Lime Drink",
+      "entity.vitalemonteaentity.name": "維他檸檬茶",
+      "item.ygcoconutmilk.name": "陽光椰子味豆奶",
+      "item.ygmangojuice.name": "陽光芒果汁",
+      "entity.ygmandarinteaentity.name": "陽光柑香茶",
+      "item.taotimetatea.name": "道地極品解茶"
+    },
+    "en_us": {
+      "entity.taotiwhiteteaentity.name": "Tao Ti Supreme White Tea",
+      "item.vitablackcurrantjuice.name": "Vita Blackcurrant Juice",
+      "item.vitasoyamilk.name": "Vitasoy Soya Milk",
+      "item.vitaapplegreentea.name": "Vita Apple Green Tea",
+      "entity.ygpineapplejuiceentity.name": "Yeung Gwong Pineapple Juice",
+      "item.taotimetagreentea.name": "Tao Ti Supreme Meta Green Tea",
+      "entity.taotimetateaentity.name": "Tao Ti Supreme Meta Tea",
+      "item.vitamaltsoyamilk.name": "Vita Malted Soya Milk",
+      "item.ygchrysanthemumtea.name": "Yeung Gwong Chrysanthemum Tea",
+      "entity.ygcoconutmilkentity.name": "Yeung Gwong Coconut Flavored Soya Milk",
+      "item.vitalemontea.name": "Vita Lemon Tea",
+      "item.ygmelonmilk.name": "Yeung Gwong Melon Flavored Soya Milk",
+      "item.ygapplejuice.name": "Yeung Gwong Apple Juice",
+      "entity.vitaapplegreenteaentity.name": "Vita Apple Green Tea",
+      "entity.vitahoneylimedrinkentity.name": "Vita Honey Lime Drink",
+      "entity.taotimetagreenteaentity.name": "Tao Ti Meta Green Tea",
+      "entity.vitachocomilkentity.name": "Vita Chocolate Milk",
+      "entity.vitasoyamilkentity.name": "Vita Soya Milk",
+      "item.yeunggwonglemontea.name": "Yeung Gwong Lemon Tea",
+      "itemGroup.tabhongkongdrinks": "Hong Kong Drinks",
+      "entity.ygapplejuiceentity.name": "Yeung Gwong Apple Juice",
+      "item.vitachrysanthemumtea.name": "Vita Chrysanthemum Tea",
+      "entity.ygmangojuiceentity.name": "Yeung Gwong Mango Juice",
+      "item.taotiwhitetea.name": "Tao Ti Supreme White Tea",
+      "entity.yglemonteaentity.name": "Yeung Gwong Lemon Tea",
+      "entity.vitamaltsoyamilkentity.name": "Vita Malted Soya Milk",
+      "item.ygpineapplejuice.name": "Yeung Gwong Pineapple Juice",
+      "item.vitachocolatemilk.name": "Vita Chocolate Milk",
+      "entity.vitachrysanthemumteaentity.name": "Vita Chrysanthemum Tea",
+      "item.ygmandarintea.name": "Yeung Gwong Mandarin Tea",
+      "entity.ygchrysanthemumteaentity.name": "Yeung Gwong Chrysanthemum Tea",
+      "entity.vitablackcurrantjuiceentity.name": "Vita Blackcurrant Juice",
+      "entity.ygmelonmilkentity.name": "Yeung Gwong Melon Flavored Soya Milk",
+      "item.vitahoneylimedrink.name": "Vita Honey Lime Drink",
+      "entity.vitalemonteaentity.name": "Vita Lemon Tea",
+      "item.ygcoconutmilk.name": "Yeung Gwong Coconut Flavored Soya Milk",
+      "item.ygmangojuice.name": "Yeung Gwong Mango Juice",
+      "entity.ygmandarinteaentity.name": "Yeung Gwong Mandarin Tea",
+      "item.taotimetatea.name": "Tao Ti Supreme Meta Tea"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "hongkongdrinks",
+    "modName": "Hong Kong Drinks",
+    "version": "1.0.0",
+    "author": "wong, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "vitalemontea",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "1.12.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.hongkongdrinks",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000214217
+}

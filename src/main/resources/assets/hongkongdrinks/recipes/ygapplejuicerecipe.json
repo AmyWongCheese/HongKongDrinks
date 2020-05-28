@@ -1,0 +1,25 @@
+{
+  "group": "hongkongdrinks",
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 1
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropApple"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:ygapplejuice",
+    "count": 1
+  }
+}

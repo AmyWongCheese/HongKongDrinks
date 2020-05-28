@@ -1,0 +1,29 @@
+{
+  "group": "hongkongdrinks",
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 11
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropLemon"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropTea"
+    }    
+  ],
+  "result": {
+    "item": "hongkongdrinks:vitalemontea",
+    "count": 1
+  }
+}

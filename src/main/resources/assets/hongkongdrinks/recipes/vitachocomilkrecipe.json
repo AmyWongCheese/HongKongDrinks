@@ -1,0 +1,21 @@
+{
+  "group": "hongkongdrinks",
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllmilk"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vitachocolatemilk",
+    "count": 1
+  }
+}

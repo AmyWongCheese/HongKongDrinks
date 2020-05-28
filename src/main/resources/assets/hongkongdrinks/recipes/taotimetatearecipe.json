@@ -1,0 +1,24 @@
+{
+  "group": "hongkongdrinks",
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 0
+    },
+    {
+      "item": "teastory:oolong_tea_bag"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropBarley"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:taotimetatea",
+    "count": 1
+  }
+}
