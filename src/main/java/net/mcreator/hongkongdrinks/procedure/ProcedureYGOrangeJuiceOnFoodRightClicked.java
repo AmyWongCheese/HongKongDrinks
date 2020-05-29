@@ -10,35 +10,35 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.hongkongdrinks.item.ItemVitaMangoJuice;
-import net.mcreator.hongkongdrinks.entity.EntityVitaMangoJuiceEntity;
+import net.mcreator.hongkongdrinks.item.ItemYGOrangeJuice;
+import net.mcreator.hongkongdrinks.entity.EntityYGOrangeJuiceEntity;
 import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
 
 @ElementsHongKongDrinks.ModElement.Tag
-public class ProcedureVitaMangoJuiceOnFoodRightClicked extends ElementsHongKongDrinks.ModElement {
-	public ProcedureVitaMangoJuiceOnFoodRightClicked(ElementsHongKongDrinks instance) {
-		super(instance, 131);
+public class ProcedureYGOrangeJuiceOnFoodRightClicked extends ElementsHongKongDrinks.ModElement {
+	public ProcedureYGOrangeJuiceOnFoodRightClicked(ElementsHongKongDrinks instance) {
+		super(instance, 136);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure VitaMangoJuiceOnFoodRightClicked!");
+			System.err.println("Failed to load dependency entity for procedure YGOrangeJuiceOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure VitaMangoJuiceOnFoodRightClicked!");
+			System.err.println("Failed to load dependency x for procedure YGOrangeJuiceOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure VitaMangoJuiceOnFoodRightClicked!");
+			System.err.println("Failed to load dependency y for procedure YGOrangeJuiceOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure VitaMangoJuiceOnFoodRightClicked!");
+			System.err.println("Failed to load dependency z for procedure YGOrangeJuiceOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure VitaMangoJuiceOnFoodRightClicked!");
+			System.err.println("Failed to load dependency world for procedure YGOrangeJuiceOnFoodRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -46,22 +46,22 @@ public class ProcedureVitaMangoJuiceOnFoodRightClicked extends ElementsHongKongD
 		float y = (float) entity.posY;
 		float z = (float) entity.posZ;
 		World world = (World) dependencies.get("world");
-		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaMangoJuice.block, (int) (1))
+		if ((((entity.isSneaking()) && (new ItemStack(ItemYGOrangeJuice.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
-				|| ((new ItemStack(ItemVitaMangoJuice.block, (int) (1))
+				|| ((new ItemStack(ItemYGOrangeJuice.block, (int) (1))
 						.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemOffhand() : ItemStack.EMPTY)
 								.getItem())
 						&& (new ItemStack(Blocks.AIR, (int) (1)).getItem() == ((entity instanceof EntityLivingBase)
 								? ((EntityLivingBase) entity).getHeldItemMainhand()
 								: ItemStack.EMPTY).getItem())))) {
 			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemVitaMangoJuice.block, (int) (1)).getItem(), -1, (int) 1, null);
+				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemYGOrangeJuice.block, (int) (1)).getItem(), -1, (int) 1, null);
 			world.playSound((EntityPlayer) null, x, y, z,
 					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			if (((entity.getHorizontalFacing()) == EnumFacing.NORTH)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaMangoJuiceEntity.EntityCustom(world);
+					Entity entityToSpawn = new EntityYGOrangeJuiceEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
 						entityToSpawn.setLocationAndAngles((x), (y + 1), (z - 1), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
@@ -69,7 +69,7 @@ public class ProcedureVitaMangoJuiceOnFoodRightClicked extends ElementsHongKongD
 				}
 			} else if (((entity.getHorizontalFacing()) == EnumFacing.SOUTH)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaMangoJuiceEntity.EntityCustom(world);
+					Entity entityToSpawn = new EntityYGOrangeJuiceEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
 						entityToSpawn.setLocationAndAngles((x), (y + 1), (z + 1), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
@@ -77,7 +77,7 @@ public class ProcedureVitaMangoJuiceOnFoodRightClicked extends ElementsHongKongD
 				}
 			} else if (((entity.getHorizontalFacing()) == EnumFacing.EAST)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaMangoJuiceEntity.EntityCustom(world);
+					Entity entityToSpawn = new EntityYGOrangeJuiceEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
 						entityToSpawn.setLocationAndAngles((x + 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
@@ -85,7 +85,7 @@ public class ProcedureVitaMangoJuiceOnFoodRightClicked extends ElementsHongKongD
 				}
 			} else if (((entity.getHorizontalFacing()) == EnumFacing.WEST)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaMangoJuiceEntity.EntityCustom(world);
+					Entity entityToSpawn = new EntityYGOrangeJuiceEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
 						entityToSpawn.setLocationAndAngles((x - 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
