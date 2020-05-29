@@ -1,0 +1,29 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 2
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropPeach"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropTea"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:ygpeachtea",
+    "count": 1
+  }
+}
