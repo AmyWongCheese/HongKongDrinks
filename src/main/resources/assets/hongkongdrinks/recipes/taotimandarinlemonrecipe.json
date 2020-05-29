@@ -1,0 +1,29 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 14
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropManderin"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropLemon"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:taotimandarinlemon",
+    "count": 1
+  }
+}

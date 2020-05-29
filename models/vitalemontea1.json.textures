@@ -107,6 +107,12 @@
         "0": "taotigreentea"
       },
       "name": "taotigreentea"
+    },
+    "taotimandarinlemon": {
+      "map": {
+        "0": "taotimandarinlemon"
+      },
+      "name": "taotimandarinlemon"
     }
   }
 }

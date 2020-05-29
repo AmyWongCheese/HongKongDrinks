@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "ENTITY": 46
+    "ENTITY": 48
   },
   "mod_elements": [
     {
@@ -1846,6 +1846,97 @@
       "compiles": true,
       "locked_code": true,
       "ids": {}
+    },
+    {
+      "name": "TaoTiMandarinLemon",
+      "type": "food",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TaoTiMandarinLemonEntity",
+      "type": "mob",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 47,
+        "1": 48
+      }
+    },
+    {
+      "name": "TaoTiMandarinLemonEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiMandarinLemonOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaoTiMandarinLemonRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1861,6 +1952,7 @@
       "item.taotimetagreentea.name": "道地極品解綠茶",
       "entity.taotimetateaentity.name": "道地極品解茶",
       "item.vitamaltsoyamilk.name": "維他麥精豆奶",
+      "entity.taotimandarinlemonentity.name": "Tao Ti Mandarin Lemon",
       "item.ygchrysanthemumtea.name": "陽光菊花茶",
       "entity.ygcoconutmilkentity.name": "陽光椰子味豆奶",
       "item.vitalemontea.name": "維他檸檬茶",
@@ -1892,7 +1984,8 @@
       "item.ygcoconutmilk.name": "陽光椰子味豆奶",
       "item.ygmangojuice.name": "陽光芒果汁",
       "entity.ygmandarinteaentity.name": "陽光柑香茶",
-      "item.taotimetatea.name": "道地極品解茶"
+      "item.taotimetatea.name": "道地極品解茶",
+      "item.taotimandarinlemon.name": "Tao Ti Mandarin Lemon"
     },
     "en_us": {
       "entity.taotiwhiteteaentity.name": "Tao Ti Supreme White Tea",
@@ -1904,6 +1997,7 @@
       "item.taotimetagreentea.name": "Tao Ti Supreme Meta Green Tea",
       "entity.taotimetateaentity.name": "Tao Ti Supreme Meta Tea",
       "item.vitamaltsoyamilk.name": "Vita Malted Soya Milk",
+      "entity.taotimandarinlemonentity.name": "Tao Ti Mandarin Lemon",
       "item.ygchrysanthemumtea.name": "Yeung Gwong Chrysanthemum Tea",
       "entity.ygcoconutmilkentity.name": "Yeung Gwong Coconut Flavored Soya Milk",
       "item.vitalemontea.name": "Vita Lemon Tea",
@@ -1935,7 +2029,8 @@
       "item.ygcoconutmilk.name": "Yeung Gwong Coconut Flavored Soya Milk",
       "item.ygmangojuice.name": "Yeung Gwong Mango Juice",
       "entity.ygmandarinteaentity.name": "Yeung Gwong Mandarin Tea",
-      "item.taotimetatea.name": "Tao Ti Supreme Meta Tea"
+      "item.taotimetatea.name": "Tao Ti Supreme Meta Tea",
+      "item.taotimandarinlemon.name": "Tao Ti Mandarin Lemon"
     }
   },
   "workspaceSettings": {
