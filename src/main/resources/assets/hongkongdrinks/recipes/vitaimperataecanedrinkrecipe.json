@@ -1,0 +1,36 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 1
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "item": "minecraft:reeds"
+    },
+    {
+      "item": "minecraft:tallgrass",
+      "data": 1
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropCarrot"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropWaterchestnut"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vitaimperataecanedrink",
+    "count": 1
+  }
+}

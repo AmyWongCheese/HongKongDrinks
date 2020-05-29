@@ -131,6 +131,12 @@
         "0": "vitaguava"
       },
       "name": "vitaguava"
+    },
+    "vitaimperatae": {
+      "map": {
+        "0": "vitaimperatae"
+      },
+      "name": "vitaimperatae"
     }
   }
 }
