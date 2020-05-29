@@ -1,0 +1,24 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 10
+    },
+    {
+      "item": "candymod:sugar_rock"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropPear"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:healthworksrocksugarwithpeardrink",
+    "count": 1
+  }
+}
