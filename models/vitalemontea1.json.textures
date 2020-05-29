@@ -125,6 +125,12 @@
         "0": "taotigrapejuice"
       },
       "name": "taotigrapejuice"
+    },
+    "vitaguava": {
+      "map": {
+        "0": "vitaguava"
+      },
+      "name": "vitaguava"
     }
   }
 }

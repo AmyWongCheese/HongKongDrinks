@@ -18,16 +18,16 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.hongkongdrinks.procedure.ProcedureVitaLemonTeaFoodEaten;
-import net.mcreator.hongkongdrinks.procedure.ProcedureTaoTiMetaGreenTeaOnFoodRightClicked;
+import net.mcreator.hongkongdrinks.procedure.ProcedureVitaGuavaJuiceOnFoodRightClicked;
 import net.mcreator.hongkongdrinks.creativetab.TabHongKongDrinks;
 import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
 
 @ElementsHongKongDrinks.ModElement.Tag
-public class ItemTaoTiMetaGreenTea extends ElementsHongKongDrinks.ModElement {
-	@GameRegistry.ObjectHolder("hongkongdrinks:taotimetagreentea")
+public class ItemVitaGuavaJuice extends ElementsHongKongDrinks.ModElement {
+	@GameRegistry.ObjectHolder("hongkongdrinks:vitaguavajuice")
 	public static final Item block = null;
-	public ItemTaoTiMetaGreenTea(ElementsHongKongDrinks instance) {
-		super(instance, 23);
+	public ItemVitaGuavaJuice(ElementsHongKongDrinks instance) {
+		super(instance, 7);
 	}
 
 	@Override
@@ -38,13 +38,13 @@ public class ItemTaoTiMetaGreenTea extends ElementsHongKongDrinks.ModElement {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("hongkongdrinks:taotimetagreentea", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("hongkongdrinks:vitaguavajuice", "inventory"));
 	}
 	public static class ItemFoodCustom extends ItemFood {
 		public ItemFoodCustom() {
 			super(4, 0.3f, false);
-			setUnlocalizedName("taotimetagreentea");
-			setRegistryName("taotimetagreentea");
+			setUnlocalizedName("vitaguavajuice");
+			setRegistryName("vitaguavajuice");
 			setCreativeTab(TabHongKongDrinks.tab);
 			setMaxStackSize(64);
 		}
@@ -68,7 +68,7 @@ public class ItemTaoTiMetaGreenTea extends ElementsHongKongDrinks.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureTaoTiMetaGreenTeaOnFoodRightClicked.executeProcedure($_dependencies);
+				ProcedureVitaGuavaJuiceOnFoodRightClicked.executeProcedure($_dependencies);
 			}
 			return ar;
 		}

@@ -29,26 +29,26 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelBase;
 
-import net.mcreator.hongkongdrinks.procedure.ProcedureVitaBlackcurrantJuiceEntityEntityIsHurt;
-import net.mcreator.hongkongdrinks.item.ItemVitaBlackcurrantJuice;
+import net.mcreator.hongkongdrinks.procedure.ProcedureVitaGuavaJuiceEntityEntityIsHurt;
+import net.mcreator.hongkongdrinks.item.ItemVitaGuavaJuice;
 import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
 
 import java.util.Iterator;
 import java.util.ArrayList;
 
 @ElementsHongKongDrinks.ModElement.Tag
-public class EntityVitaBlackcurrantJuiceEntity extends ElementsHongKongDrinks.ModElement {
-	public static final int ENTITYID = 21;
-	public static final int ENTITYID_RANGED = 22;
-	public EntityVitaBlackcurrantJuiceEntity(ElementsHongKongDrinks instance) {
-		super(instance, 55);
+public class EntityVitaGuavaJuiceEntity extends ElementsHongKongDrinks.ModElement {
+	public static final int ENTITYID = 53;
+	public static final int ENTITYID_RANGED = 54;
+	public EntityVitaGuavaJuiceEntity(ElementsHongKongDrinks instance) {
+		super(instance, 119);
 	}
 
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class)
-				.id(new ResourceLocation("hongkongdrinks", "vitablackcurrantjuiceentity"), ENTITYID).name("vitablackcurrantjuiceentity")
-				.tracker(100, 3, true).build());
+				.id(new ResourceLocation("hongkongdrinks", "vitaguavajuiceentity"), ENTITYID).name("vitaguavajuiceentity").tracker(100, 3, true)
+				.build());
 	}
 
 	@Override
@@ -71,7 +71,7 @@ public class EntityVitaBlackcurrantJuiceEntity extends ElementsHongKongDrinks.Mo
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			return new RenderLiving(renderManager, new ModelVitaLemonTea(), 0.05f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("hongkongdrinks:textures/vitablackcurrantjuice_e.png");
+					return new ResourceLocation("hongkongdrinks:textures/vitaguava_e.png");
 				}
 			};
 		});
@@ -104,7 +104,7 @@ public class EntityVitaBlackcurrantJuiceEntity extends ElementsHongKongDrinks.Mo
 
 		@Override
 		protected Item getDropItem() {
-			return new ItemStack(ItemVitaBlackcurrantJuice.block, (int) (1)).getItem();
+			return new ItemStack(ItemVitaGuavaJuice.block, (int) (1)).getItem();
 		}
 
 		@Override
@@ -140,7 +140,7 @@ public class EntityVitaBlackcurrantJuiceEntity extends ElementsHongKongDrinks.Mo
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureVitaBlackcurrantJuiceEntityEntityIsHurt.executeProcedure($_dependencies);
+				ProcedureVitaGuavaJuiceEntityEntityIsHurt.executeProcedure($_dependencies);
 			}
 			if (source.getImmediateSource() instanceof EntityArrow)
 				return false;
