@@ -1,0 +1,29 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 10
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropHawthorn"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropApple"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:healthworkshawhornappledrink",
+    "count": 1
+  }
+}
