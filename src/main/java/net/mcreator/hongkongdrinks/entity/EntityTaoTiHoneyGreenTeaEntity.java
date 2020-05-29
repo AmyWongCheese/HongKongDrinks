@@ -29,25 +29,25 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelBase;
 
-import net.mcreator.hongkongdrinks.procedure.ProcedureVitaHoneyLimeDrinkEntityEntityIsHurt;
-import net.mcreator.hongkongdrinks.item.ItemVitaHoneyLimeDrink;
+import net.mcreator.hongkongdrinks.procedure.ProcedureTaoTiHoneyGreenTeaEntityEntityIsHurt;
+import net.mcreator.hongkongdrinks.item.ItemTaoTiHoneyGreenTea;
 import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
 
 import java.util.Iterator;
 import java.util.ArrayList;
 
 @ElementsHongKongDrinks.ModElement.Tag
-public class EntityVitaHoneyLimeDrinkEntity extends ElementsHongKongDrinks.ModElement {
-	public static final int ENTITYID = 43;
-	public static final int ENTITYID_RANGED = 44;
-	public EntityVitaHoneyLimeDrinkEntity(ElementsHongKongDrinks instance) {
-		super(instance, 95);
+public class EntityTaoTiHoneyGreenTeaEntity extends ElementsHongKongDrinks.ModElement {
+	public static final int ENTITYID = 45;
+	public static final int ENTITYID_RANGED = 46;
+	public EntityTaoTiHoneyGreenTeaEntity(ElementsHongKongDrinks instance) {
+		super(instance, 99);
 	}
 
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class)
-				.id(new ResourceLocation("hongkongdrinks", "vitahoneylimedrinkentity"), ENTITYID).name("vitahoneylimedrinkentity")
+				.id(new ResourceLocation("hongkongdrinks", "taotihoneygreenteaentity"), ENTITYID).name("taotihoneygreenteaentity")
 				.tracker(100, 3, true).build());
 	}
 
@@ -71,7 +71,7 @@ public class EntityVitaHoneyLimeDrinkEntity extends ElementsHongKongDrinks.ModEl
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			return new RenderLiving(renderManager, new ModelVitaLemonTea(), 0.05f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("hongkongdrinks:textures/vitahoneylime_e.png");
+					return new ResourceLocation("hongkongdrinks:textures/taotigreentea_e.png");
 				}
 			};
 		});
@@ -104,7 +104,7 @@ public class EntityVitaHoneyLimeDrinkEntity extends ElementsHongKongDrinks.ModEl
 
 		@Override
 		protected Item getDropItem() {
-			return new ItemStack(ItemVitaHoneyLimeDrink.block, (int) (1)).getItem();
+			return new ItemStack(ItemTaoTiHoneyGreenTea.block, (int) (1)).getItem();
 		}
 
 		@Override
@@ -140,7 +140,7 @@ public class EntityVitaHoneyLimeDrinkEntity extends ElementsHongKongDrinks.ModEl
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureVitaHoneyLimeDrinkEntityEntityIsHurt.executeProcedure($_dependencies);
+				ProcedureTaoTiHoneyGreenTeaEntityEntityIsHurt.executeProcedure($_dependencies);
 			}
 			if (source.getImmediateSource() instanceof EntityArrow)
 				return false;

@@ -17,6 +17,9 @@
     "isAlwaysEdible": false,
     "animation": "drink",
     "hasGlow": false,
+    "onRightClicked": {
+      "name": "TaoTiHoneyGreenTeaOnFoodRightClicked"
+    },
     "onEaten": {
       "name": "VitaLemonTeaFoodEaten"
     }

@@ -1,0 +1,25 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 2
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dropHoney"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropTea"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:taotihoneygreentea",
+    "count": 1
+  }
+}
