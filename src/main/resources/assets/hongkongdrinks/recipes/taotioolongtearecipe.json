@@ -1,0 +1,20 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 7
+    },
+    {
+      "item": "teastory:oolong_tea_bag"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:taotioolongtea",
+    "count": 1
+  }
+}
