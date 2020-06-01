@@ -1,5 +1,6 @@
 {
   "id_map": {
+    "GUI": 1,
     "ENTITY": 66
   },
   "mod_elements": [
@@ -2756,6 +2757,22 @@
       "compiles": true,
       "locked_code": true,
       "ids": {}
+    },
+    {
+      "name": "TaoTiMandarinLemonCuisine",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "YGMandarinTeaCuisine",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -2896,7 +2913,6 @@
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "vitalemontea",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

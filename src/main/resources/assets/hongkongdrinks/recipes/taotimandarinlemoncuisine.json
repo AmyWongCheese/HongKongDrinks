@@ -7,18 +7,23 @@
     },
     {
       "item": "minecraft:dye",
-      "data": 10
+      "data": 14
     },
     {
       "type": "forge:ore_dict",
       "ore": "listAllsugar"
     },
     {
-      "item": "harvestcraft:guavaitem"
+      "item": "cuisine:food",
+      "data": 9
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropLemon"
     }
   ],
   "result": {
-    "item": "hongkongdrinks:vitaguavajuice",
+    "item": "hongkongdrinks:taotimandarinlemon",
     "count": 1
   }
 }
