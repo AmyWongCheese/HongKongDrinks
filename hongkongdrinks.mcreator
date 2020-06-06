@@ -1,7 +1,7 @@
 {
   "id_map": {
     "GUI": 1,
-    "ENTITY": 66
+    "ENTITY": 68
   },
   "mod_elements": [
     {
@@ -2773,6 +2773,97 @@
       "compiles": true,
       "locked_code": true,
       "ids": {}
+    },
+    {
+      "name": "HFTPassionFruit",
+      "type": "food",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HFTPassionFruitEntity",
+      "type": "mob",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 67,
+        "1": 68
+      }
+    },
+    {
+      "name": "HFTPassionFruitEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HFTPassionFruitOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HFTPassionFruitRecipe",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -2784,19 +2875,21 @@
       "item.vitaapplegreentea.name": "維他蘋果綠茶",
       "entity.ygorangejuiceentity.name": "陽光橙汁",
       "item.taotihoneygreentea.name": "道地蜂蜜綠茶",
-      "entity.taotimetateaentity.name": "道地極品解茶",
       "item.healthworkshawhornappledrink.name": "健康工房山楂蘋果",
+      "entity.taotimetateaentity.name": "道地極品解茶",
       "item.vitamaltsoyamilk.name": "維他麥精豆奶",
       "entity.taotioolongteaentity.name": "道地極品烏龍茶",
       "item.vitaguavajuice.name": "維他番石榴汁",
       "item.ygorangejuice.name": "陽光橙汁",
+      "item.hftpassionfruit.name": "鴻福堂百香果蜜",
+      "entity.hftpassionfruitentity.name": "鴻福堂百香果蜜",
       "entity.vitaapplegreenteaentity.name": "維他蘋果綠茶",
       "item.taotioolongtea.name": "道地極品烏龍茶",
-      "entity.healthworksrocksugarwithpeardrinkentity.name": "健康工房冰糖雪梨",
       "entity.taotimetagreenteaentity.name": "道地極品解綠茶",
+      "entity.healthworksrocksugarwithpeardrinkentity.name": "健康工房冰糖雪梨",
       "entity.vitachocomilkentity.name": "維他朱古力奶",
-      "entity.vitasoyamilkentity.name": "維他奶",
       "entity.healthworkshawhornappledrinkentity.name": "健康工房山楂蘋果",
+      "entity.vitasoyamilkentity.name": "維他奶",
       "entity.vitaimperataecanedrinkentity.name": "清心棧竹蔗茅根",
       "entity.vitamangojuiceentity.name": "維他芒果汁",
       "entity.taotihoneygreenteaentity.name": "道地蜂蜜綠茶",
@@ -2847,12 +2940,14 @@
       "item.vitaapplegreentea.name": "Vita Apple Green Tea",
       "entity.ygorangejuiceentity.name": "Yeung Gwong Orange Juice",
       "item.taotihoneygreentea.name": "Tao Ti Honey Green Tea",
-      "item.healthworkshawhornappledrink.name": "Healthworks Hawhorn Apple Drink",
       "entity.taotimetateaentity.name": "Tao Ti Supreme Meta Tea",
+      "item.healthworkshawhornappledrink.name": "Healthworks Hawhorn Apple Drink",
       "item.vitamaltsoyamilk.name": "Vita Malted Soya Milk",
       "entity.taotioolongteaentity.name": "Tao Ti Supreme Oolong Tea",
       "item.vitaguavajuice.name": "Vita Guava Juice",
       "item.ygorangejuice.name": "Yeung Gwong Orange Juice",
+      "item.hftpassionfruit.name": "Hung Fook Tong Passion Fruit with Honey Drink",
+      "entity.hftpassionfruitentity.name": "Hung Fook Tong Passion Fruit with Honey Drink",
       "entity.vitaapplegreenteaentity.name": "Vita Apple Green Tea",
       "item.taotioolongtea.name": "Tao Ti Supreme Oolong Tea",
       "entity.taotimetagreenteaentity.name": "Tao Ti Meta Green Tea",
@@ -2909,7 +3004,7 @@
     "modid": "hongkongdrinks",
     "modName": "Hong Kong Drinks",
     "version": "1.0.0",
-    "author": "wong, MCreator",
+    "author": "NeoCosplayer, MCreator",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
