@@ -12,16 +12,16 @@
         "value": "Items.GLASS_BOTTLE"
       },
       {
-        "value": "Items.DYE#2"
+        "value": "Items.DYE#14"
       },
       {
         "value": "Items.SUGAR"
       },
       {
-        "value": "Items.CARROT"
+        "value": "Blocks.SAND#0"
       },
       {
-        "value": ""
+        "value": "Items.APPLE"
       },
       {
         "value": ""
@@ -37,9 +37,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:HFTGinsengHoney"
+      "value": "CUSTOM:HFTSaltedMandarin"
     },
-    "name": "hftginsenghoneyrecipe",
+    "name": "hftsaltedmandarinrecipe",
     "namespace": "mod"
   }
 }
