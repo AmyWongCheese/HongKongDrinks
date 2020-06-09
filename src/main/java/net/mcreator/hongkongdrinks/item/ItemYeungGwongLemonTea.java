@@ -27,7 +27,7 @@ public class ItemYeungGwongLemonTea extends ElementsHongKongDrinks.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:yeunggwonglemontea")
 	public static final Item block = null;
 	public ItemYeungGwongLemonTea(ElementsHongKongDrinks instance) {
-		super(instance, 10);
+		super(instance, 12);
 	}
 
 	@Override

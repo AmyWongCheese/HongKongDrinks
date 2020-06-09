@@ -41,7 +41,7 @@ public class EntityTaoTiGrapeJuiceEntity extends ElementsHongKongDrinks.ModEleme
 	public static final int ENTITYID = 51;
 	public static final int ENTITYID_RANGED = 52;
 	public EntityTaoTiGrapeJuiceEntity(ElementsHongKongDrinks instance) {
-		super(instance, 114);
+		super(instance, 123);
 	}
 
 	@Override

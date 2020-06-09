@@ -41,7 +41,7 @@ public class EntityYGMelonMilkEntity extends ElementsHongKongDrinks.ModElement {
 	public static final int ENTITYID = 27;
 	public static final int ENTITYID_RANGED = 28;
 	public EntityYGMelonMilkEntity(ElementsHongKongDrinks instance) {
-		super(instance, 67);
+		super(instance, 75);
 	}
 
 	@Override
