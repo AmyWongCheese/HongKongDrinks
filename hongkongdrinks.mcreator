@@ -1,7 +1,7 @@
 {
   "id_map": {
     "GUI": 1,
-    "ENTITY": 68
+    "ENTITY": 70
   },
   "mod_elements": [
     {
@@ -2864,6 +2864,89 @@
       "compiles": true,
       "locked_code": true,
       "ids": {}
+    },
+    {
+      "name": "HFTGinsengHoney",
+      "type": "food",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HFTGinsengHoneyEntity",
+      "type": "mob",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 69,
+        "1": 70
+      }
+    },
+    {
+      "name": "HFTGinsengHoneyEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HFTGinsengHoneyOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2885,6 +2968,7 @@
       "entity.hftpassionfruitentity.name": "ÂEºÖ°ó¦Ê­»ªG»e",
       "entity.vitaapplegreenteaentity.name": "ºû¥LÄ«ªGºñ¯ù",
       "item.taotioolongtea.name": "¹D¦a·¥«~¯QÀs¯ù",
+      "entity.hftginsenghoneyentity.name": "Hung Fook Tong American Ginseng With Honey Drink",
       "entity.taotimetagreenteaentity.name": "¹D¦a·¥«~¸Ñºñ¯ù",
       "entity.healthworksrocksugarwithpeardrinkentity.name": "°·±d¤u©Ð¦B¿}³·±ù",
       "entity.vitachocomilkentity.name": "ºû¥L¦¶¥j¤O¥¤",
@@ -2913,6 +2997,7 @@
       "entity.ygcoconutmilkentity.name": "¶§¥ú·¦¤l¨ý¨§¥¤",
       "item.vitalemontea.name": "ºû¥LÂfÂc¯ù",
       "item.ygmelonmilk.name": "¶§¥ú»e¥Ê¨§¥¤",
+      "item.hftginsenghoney.name": "Hung Fook Tong American Ginseng With Honey Drink",
       "item.ygapplejuice.name": "¶§¥úÄ«ªG¥Ä",
       "entity.vitahoneylimedrinkentity.name": "²M¤ß´Ì¥V»e«CÂf",
       "item.vitamangojuice.name": "ºû¥L¨~ªG¥Ä",
@@ -2950,6 +3035,7 @@
       "entity.hftpassionfruitentity.name": "Hung Fook Tong Passion Fruit with Honey Drink",
       "entity.vitaapplegreenteaentity.name": "Vita Apple Green Tea",
       "item.taotioolongtea.name": "Tao Ti Supreme Oolong Tea",
+      "entity.hftginsenghoneyentity.name": "Hung Fook Tong American Ginseng With Honey Drink",
       "entity.taotimetagreenteaentity.name": "Tao Ti Meta Green Tea",
       "entity.healthworksrocksugarwithpeardrinkentity.name": "Healthworks Rock Sugar With Pear Drink",
       "entity.vitachocomilkentity.name": "Vita Chocolate Milk",
@@ -2978,6 +3064,7 @@
       "entity.ygcoconutmilkentity.name": "Yeung Gwong Coconut Flavored Soya Milk",
       "item.vitalemontea.name": "Vita Lemon Tea",
       "item.ygmelonmilk.name": "Yeung Gwong Melon Flavored Soya Milk",
+      "item.hftginsenghoney.name": "Hung Fook Tong American Ginseng With Honey Drink",
       "item.ygapplejuice.name": "Yeung Gwong Apple Juice",
       "entity.vitahoneylimedrinkentity.name": "Vita Honey Lime Drink",
       "item.vitamangojuice.name": "Vita Mango Juice",
