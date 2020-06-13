@@ -27,7 +27,7 @@ public class ItemHealthworksRockSugarWithPearDrink extends ElementsHongKongDrink
 	@GameRegistry.ObjectHolder("hongkongdrinks:healthworksrocksugarwithpeardrink")
 	public static final Item block = null;
 	public ItemHealthworksRockSugarWithPearDrink(ElementsHongKongDrinks instance) {
-		super(instance, 30);
+		super(instance, 35);
 	}
 
 	@Override

@@ -39,7 +39,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:HFTSaltedMandarin"
     },
-    "name": "hftsaltedmandarinrecipe",
+    "name": "hftsaltedmandarinitemsalt",
     "namespace": "mod"
   }
 }

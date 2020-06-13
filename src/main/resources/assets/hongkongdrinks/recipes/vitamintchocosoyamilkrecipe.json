@@ -1,0 +1,33 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 6
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodPeppermint"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropSoybean"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vitamintchocosoyamilk",
+    "count": 1
+  }
+}

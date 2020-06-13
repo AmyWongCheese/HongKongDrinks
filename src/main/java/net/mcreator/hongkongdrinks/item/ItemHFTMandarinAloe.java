@@ -27,7 +27,7 @@ public class ItemHFTMandarinAloe extends ElementsHongKongDrinks.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:hftmandarinaloe")
 	public static final Item block = null;
 	public ItemHFTMandarinAloe(ElementsHongKongDrinks instance) {
-		super(instance, 165);
+		super(instance, 38);
 	}
 
 	@Override

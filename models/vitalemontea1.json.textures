@@ -167,6 +167,36 @@
         "0": "healthworkspear"
       },
       "name": "healthworkspear"
+    },
+    "vitaicygrapefruit": {
+      "map": {
+        "0": "vitaicygrapefruit"
+      },
+      "name": "vitaicygrapefruit"
+    },
+    "vitachocosoya": {
+      "map": {
+        "0": "vitachocosoya"
+      },
+      "name": "vitachocosoya"
+    },
+    "vitacoconutmilk": {
+      "map": {
+        "0": "vitacoconutmilk"
+      },
+      "name": "vitacoconutmilk"
+    },
+    "vitamintchoco": {
+      "map": {
+        "0": "vitamintchoco"
+      },
+      "name": "vitamintchoco"
+    },
+    "vitasugarcane": {
+      "map": {
+        "0": "vitasugarcane"
+      },
+      "name": "vitasugarcane"
     }
   }
 }
