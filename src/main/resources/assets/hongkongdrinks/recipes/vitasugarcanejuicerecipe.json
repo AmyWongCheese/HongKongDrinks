@@ -15,7 +15,11 @@
     },
     {
       "item": "minecraft:reeds"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:vitasugarcanejuice",

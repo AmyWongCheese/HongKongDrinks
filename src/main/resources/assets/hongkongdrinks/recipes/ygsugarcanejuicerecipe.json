@@ -1,0 +1,28 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 1
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "item": "minecraft:reeds"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:ygsugarcanejuice",
+    "count": 1
+  }
+}

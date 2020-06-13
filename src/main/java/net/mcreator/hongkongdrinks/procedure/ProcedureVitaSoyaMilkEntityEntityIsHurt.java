@@ -12,7 +12,7 @@ import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
 @ElementsHongKongDrinks.ModElement.Tag
 public class ProcedureVitaSoyaMilkEntityEntityIsHurt extends ElementsHongKongDrinks.ModElement {
 	public ProcedureVitaSoyaMilkEntityEntityIsHurt(ElementsHongKongDrinks instance) {
-		super(instance, 55);
+		super(instance, 59);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

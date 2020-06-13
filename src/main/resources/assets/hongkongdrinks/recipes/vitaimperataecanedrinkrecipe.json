@@ -27,7 +27,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropWaterchestnut"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:vitaimperataecanedrink",

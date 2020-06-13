@@ -41,7 +41,7 @@ public class EntityHFTSaltedMandarinEntity extends ElementsHongKongDrinks.ModEle
 	public static final int ENTITYID = 73;
 	public static final int ENTITYID_RANGED = 74;
 	public EntityHFTSaltedMandarinEntity(ElementsHongKongDrinks instance) {
-		super(instance, 176);
+		super(instance, 180);
 	}
 
 	@Override

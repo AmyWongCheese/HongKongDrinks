@@ -19,7 +19,11 @@
     },
     {
       "item": "rustic:aloe_vera"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:hftmandarinaloe",

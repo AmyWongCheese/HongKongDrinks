@@ -15,7 +15,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropPear"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:healthworksrocksugarwithpeardrink",

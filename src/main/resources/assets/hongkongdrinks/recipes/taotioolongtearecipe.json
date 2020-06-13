@@ -11,7 +11,11 @@
     },
     {
       "item": "teastory:oolong_tea_bag"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:taotioolongtea",

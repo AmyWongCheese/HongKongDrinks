@@ -16,7 +16,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropPineapple"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:ygpineapplejuice",

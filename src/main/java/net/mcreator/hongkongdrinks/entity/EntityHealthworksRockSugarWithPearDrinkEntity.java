@@ -41,7 +41,7 @@ public class EntityHealthworksRockSugarWithPearDrinkEntity extends ElementsHongK
 	public static final int ENTITYID = 65;
 	public static final int ENTITYID_RANGED = 66;
 	public EntityHealthworksRockSugarWithPearDrinkEntity(ElementsHongKongDrinks instance) {
-		super(instance, 158);
+		super(instance, 162);
 	}
 
 	@Override

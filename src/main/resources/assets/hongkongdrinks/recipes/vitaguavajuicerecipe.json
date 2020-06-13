@@ -15,7 +15,11 @@
     },
     {
       "item": "harvestcraft:guavaitem"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:vitaguavajuice",

@@ -41,7 +41,7 @@ public class EntityVitaCoconutSoyaMilkEntity extends ElementsHongKongDrinks.ModE
 	public static final int ENTITYID = 79;
 	public static final int ENTITYID_RANGED = 80;
 	public EntityVitaCoconutSoyaMilkEntity(ElementsHongKongDrinks instance) {
-		super(instance, 195);
+		super(instance, 199);
 	}
 
 	@Override

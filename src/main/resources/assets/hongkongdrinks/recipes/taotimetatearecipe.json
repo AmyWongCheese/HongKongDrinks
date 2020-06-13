@@ -15,7 +15,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropBarley"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:taotimetatea",

@@ -27,7 +27,7 @@ public class ItemVitaMintChocoSoyaMilk extends ElementsHongKongDrinks.ModElement
 	@GameRegistry.ObjectHolder("hongkongdrinks:vitamintchocosoyamilk")
 	public static final Item block = null;
 	public ItemVitaMintChocoSoyaMilk(ElementsHongKongDrinks instance) {
-		super(instance, 7);
+		super(instance, 8);
 	}
 
 	@Override

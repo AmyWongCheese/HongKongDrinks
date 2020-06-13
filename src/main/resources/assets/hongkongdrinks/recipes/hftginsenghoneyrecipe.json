@@ -15,7 +15,11 @@
     },
     {
       "item": "rustic:ginseng"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:hftginsenghoney",

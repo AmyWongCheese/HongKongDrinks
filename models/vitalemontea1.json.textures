@@ -197,6 +197,30 @@
         "0": "vitasugarcane"
       },
       "name": "vitasugarcane"
+    },
+    "vitavanillamilk": {
+      "map": {
+        "0": "vitavanillamilk"
+      },
+      "name": "vitavanillamilk"
+    },
+    "vitagingermilk": {
+      "map": {
+        "0": "vitagingermilk"
+      },
+      "name": "vitagingermilk"
+    },
+    "yglycheetea": {
+      "map": {
+        "0": "yglycheetea"
+      },
+      "name": "yglycheetea"
+    },
+    "ygsugarcane": {
+      "map": {
+        "0": "ygsugarcane"
+      },
+      "name": "ygsugarcane"
     }
   }
 }

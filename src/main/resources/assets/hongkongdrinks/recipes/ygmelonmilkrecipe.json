@@ -20,7 +20,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropSoybean"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:ygmelonmilk",

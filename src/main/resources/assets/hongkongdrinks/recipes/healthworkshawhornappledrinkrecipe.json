@@ -20,7 +20,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropApple"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:healthworkshawhornappledrink",

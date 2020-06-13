@@ -16,7 +16,11 @@
     {
       "type": "forge:ore_dict",
       "ore": "cropGrape"
-    }
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    } 
   ],
   "result": {
     "item": "hongkongdrinks:taotigrapejuice",
