@@ -17,7 +17,7 @@ import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
 @ElementsHongKongDrinks.ModElement.Tag
 public class ProcedureHFTSaltedMandarinOnFoodRightClicked extends ElementsHongKongDrinks.ModElement {
 	public ProcedureHFTSaltedMandarinOnFoodRightClicked(ElementsHongKongDrinks instance) {
-		super(instance, 172);
+		super(instance, 181);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -45,6 +45,8 @@ public class ProcedureHFTSaltedMandarinOnFoodRightClicked extends ElementsHongKo
 		float x = (float) entity.posX;
 		float y = (float) entity.posY;
 		float z = (float) entity.posZ;
+		float a = x - (int) x;
+		float b = z - (int) z;
 		World world = (World) dependencies.get("world");
 		if ((((entity.isSneaking()) && (new ItemStack(ItemHFTSaltedMandarin.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
@@ -64,7 +66,17 @@ public class ProcedureHFTSaltedMandarinOnFoodRightClicked extends ElementsHongKo
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityHFTSaltedMandarinEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x), (y + 1), (z - 1), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) + a),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) - b + 1),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -72,7 +84,17 @@ public class ProcedureHFTSaltedMandarinOnFoodRightClicked extends ElementsHongKo
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityHFTSaltedMandarinEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x), (y + 1), (z + 1), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) + a),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) + b),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -80,7 +102,17 @@ public class ProcedureHFTSaltedMandarinOnFoodRightClicked extends ElementsHongKo
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityHFTSaltedMandarinEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x + 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) - a + 1),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) + b),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -88,7 +120,17 @@ public class ProcedureHFTSaltedMandarinOnFoodRightClicked extends ElementsHongKo
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityHFTSaltedMandarinEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x - 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) + a),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) + b),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
