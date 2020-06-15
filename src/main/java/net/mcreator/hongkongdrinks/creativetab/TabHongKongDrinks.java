@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.creativetab.CreativeTabs;
 
 import net.mcreator.hongkongdrinks.item.ItemVitaLemonTea;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class TabHongKongDrinks extends ElementsHongKongDrinks.ModElement {
-	public TabHongKongDrinks(ElementsHongKongDrinks instance) {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class TabHongKongDrinks extends ElementsHongkongdrinksMod.ModElement {
+	public TabHongKongDrinks(ElementsHongkongdrinksMod instance) {
 		super(instance, 46);
 	}
 

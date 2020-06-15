@@ -1,15 +1,15 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "mob",
   "definition": {
     "mobName": "Vita Lemon Tea",
     "mobLabel": "",
-    "mobModelTexture": "vitalemon.png",
     "mobModelName": "ModelVitaLemonTea",
+    "mobModelTexture": "vitalemon.png",
     "modelWidth": 0.2,
     "modelHeight": 0.5,
     "modelShadowSize": 0.05,
-    "armorBaseValue": 0.0,
+    "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -256,
@@ -47,6 +47,7 @@
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 0,
     "movementSpeed": 10.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 100,
     "health": 100,
     "xpAmount": 0,
@@ -96,6 +97,7 @@
     "rangedAttackItem": {
       "value": ""
     },
+    "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 1,

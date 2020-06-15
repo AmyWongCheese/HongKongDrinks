@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "vitamango",
     "customModelName": "vitalemontea1:vitamango",
     "name": "Vita Mango Juice",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

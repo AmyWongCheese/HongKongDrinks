@@ -7,11 +7,11 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.hongkongdrinks.item.ItemVitaMaltSoyaMilk;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ProcedureVitaMaltSoyaMilkEntityEntityIsHurt extends ElementsHongKongDrinks.ModElement {
-	public ProcedureVitaMaltSoyaMilkEntityEntityIsHurt(ElementsHongKongDrinks instance) {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ProcedureVitaMaltSoyaMilkEntityEntityIsHurt extends ElementsHongkongdrinksMod.ModElement {
+	public ProcedureVitaMaltSoyaMilkEntityEntityIsHurt(ElementsHongkongdrinksMod instance) {
 		super(instance, 64);
 	}
 

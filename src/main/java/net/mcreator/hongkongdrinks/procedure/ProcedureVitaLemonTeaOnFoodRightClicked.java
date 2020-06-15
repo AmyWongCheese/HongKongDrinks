@@ -12,11 +12,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.hongkongdrinks.item.ItemVitaLemonTea;
 import net.mcreator.hongkongdrinks.entity.EntityVitaLemonTeaEntity;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ProcedureVitaLemonTeaOnFoodRightClicked extends ElementsHongKongDrinks.ModElement {
-	public ProcedureVitaLemonTeaOnFoodRightClicked(ElementsHongKongDrinks instance) {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ProcedureVitaLemonTeaOnFoodRightClicked extends ElementsHongkongdrinksMod.ModElement {
+	public ProcedureVitaLemonTeaOnFoodRightClicked(ElementsHongkongdrinksMod instance) {
 		super(instance, 51);
 	}
 
@@ -42,11 +42,11 @@ public class ProcedureVitaLemonTeaOnFoodRightClicked extends ElementsHongKongDri
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		float x = (float) entity.posX;
-		float y = (float) entity.posY;
-		float z = (float) entity.posZ;
-		float a = x - (int) x;
-		float b = z - (int) z;
+			float x = (float) entity.posX;
+			float y = (float) entity.posY;
+			float z = (float) entity.posZ;
+			float a = x - (int) x;
+			float b = z - (int) z;
 		World world = (World) dependencies.get("world");
 		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaLemonTea.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))

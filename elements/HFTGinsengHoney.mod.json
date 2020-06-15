@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "hftginsenghoney",
     "customModelName": "hungfooktong:hftginsenghoney",
     "name": "Hung Fook Tong American Ginseng With Honey Drink",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

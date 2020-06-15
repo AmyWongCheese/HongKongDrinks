@@ -31,16 +31,16 @@ import net.minecraft.client.model.ModelBase;
 
 import net.mcreator.hongkongdrinks.procedure.ProcedureHFTPassionFruitEntityEntityIsHurt;
 import net.mcreator.hongkongdrinks.item.ItemHFTPassionFruit;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class EntityHFTPassionFruitEntity extends ElementsHongKongDrinks.ModElement {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class EntityHFTPassionFruitEntity extends ElementsHongkongdrinksMod.ModElement {
 	public static final int ENTITYID = 67;
 	public static final int ENTITYID_RANGED = 68;
-	public EntityHFTPassionFruitEntity(ElementsHongKongDrinks instance) {
+	public EntityHFTPassionFruitEntity(ElementsHongkongdrinksMod instance) {
 		super(instance, 168);
 	}
 
@@ -191,6 +191,10 @@ public class EntityHFTPassionFruitEntity extends ElementsHongKongDrinks.ModEleme
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
+			super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 		}
 	}
 }

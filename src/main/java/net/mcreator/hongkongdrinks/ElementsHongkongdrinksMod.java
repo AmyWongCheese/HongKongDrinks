@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
-public class ElementsHongKongDrinks implements IFuelHandler, IWorldGenerator {
+public class ElementsHongkongdrinksMod implements IFuelHandler, IWorldGenerator {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
@@ -53,23 +53,23 @@ public class ElementsHongKongDrinks implements IFuelHandler, IWorldGenerator {
 	public final List<Supplier<EntityEntry>> entities = new ArrayList<>();
 	public final List<Supplier<Potion>> potions = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
-	public ElementsHongKongDrinks() {
+	public ElementsHongkongdrinksMod() {
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
 		try {
 			for (ASMDataTable.ASMData asmData : event.getAsmData().getAll(ModElement.Tag.class.getName())) {
 				Class<?> clazz = Class.forName(asmData.getClassName());
-				if (clazz.getSuperclass() == ElementsHongKongDrinks.ModElement.class)
-					elements.add((ElementsHongKongDrinks.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
+				if (clazz.getSuperclass() == ElementsHongkongdrinksMod.ModElement.class)
+					elements.add((ElementsHongkongdrinksMod.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		Collections.sort(elements);
-		elements.forEach(ElementsHongKongDrinks.ModElement::initElements);
-		this.addNetworkMessage(HongKongDrinksVariables.WorldSavedDataSyncMessageHandler.class,
-				HongKongDrinksVariables.WorldSavedDataSyncMessage.class, Side.SERVER, Side.CLIENT);
+		elements.forEach(ElementsHongkongdrinksMod.ModElement::initElements);
+		this.addNetworkMessage(HongkongdrinksModVariables.WorldSavedDataSyncMessageHandler.class,
+				HongkongdrinksModVariables.WorldSavedDataSyncMessage.class, Side.SERVER, Side.CLIENT);
 	}
 
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
@@ -95,13 +95,13 @@ public class ElementsHongKongDrinks implements IFuelHandler, IWorldGenerator {
 	@SubscribeEvent
 	public void onPlayerLoggedIn(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.player.world.isRemote) {
-			WorldSavedData mapdata = HongKongDrinksVariables.MapVariables.get(event.player.world);
-			WorldSavedData worlddata = HongKongDrinksVariables.WorldVariables.get(event.player.world);
+			WorldSavedData mapdata = HongkongdrinksModVariables.MapVariables.get(event.player.world);
+			WorldSavedData worlddata = HongkongdrinksModVariables.WorldVariables.get(event.player.world);
 			if (mapdata != null)
-				HongKongDrinks.PACKET_HANDLER.sendTo(new HongKongDrinksVariables.WorldSavedDataSyncMessage(0, mapdata),
+				HongkongdrinksMod.PACKET_HANDLER.sendTo(new HongkongdrinksModVariables.WorldSavedDataSyncMessage(0, mapdata),
 						(EntityPlayerMP) event.player);
 			if (worlddata != null)
-				HongKongDrinks.PACKET_HANDLER.sendTo(new HongKongDrinksVariables.WorldSavedDataSyncMessage(1, worlddata),
+				HongkongdrinksMod.PACKET_HANDLER.sendTo(new HongkongdrinksModVariables.WorldSavedDataSyncMessage(1, worlddata),
 						(EntityPlayerMP) event.player);
 		}
 	}
@@ -109,9 +109,9 @@ public class ElementsHongKongDrinks implements IFuelHandler, IWorldGenerator {
 	@SubscribeEvent
 	public void onPlayerChangedDimension(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (!event.player.world.isRemote) {
-			WorldSavedData worlddata = HongKongDrinksVariables.WorldVariables.get(event.player.world);
+			WorldSavedData worlddata = HongkongdrinksModVariables.WorldVariables.get(event.player.world);
 			if (worlddata != null)
-				HongKongDrinks.PACKET_HANDLER.sendTo(new HongKongDrinksVariables.WorldSavedDataSyncMessage(1, worlddata),
+				HongkongdrinksMod.PACKET_HANDLER.sendTo(new HongkongdrinksModVariables.WorldSavedDataSyncMessage(1, worlddata),
 						(EntityPlayerMP) event.player);
 		}
 	}
@@ -119,7 +119,7 @@ public class ElementsHongKongDrinks implements IFuelHandler, IWorldGenerator {
 	public <T extends IMessage, V extends IMessage> void addNetworkMessage(Class<? extends IMessageHandler<T, V>> handler, Class<T> messageClass,
 			Side... sides) {
 		for (Side side : sides)
-			HongKongDrinks.PACKET_HANDLER.registerMessage(handler, messageClass, messageID, side);
+			HongkongdrinksMod.PACKET_HANDLER.registerMessage(handler, messageClass, messageID, side);
 		messageID++;
 	}
 	public static class GuiHandler implements IGuiHandler {
@@ -160,9 +160,9 @@ public class ElementsHongKongDrinks implements IFuelHandler, IWorldGenerator {
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface Tag {
 		}
-		protected final ElementsHongKongDrinks elements;
+		protected final ElementsHongkongdrinksMod elements;
 		protected final int sortid;
-		public ModElement(ElementsHongKongDrinks elements, int sortid) {
+		public ModElement(ElementsHongkongdrinksMod elements, int sortid) {
 			this.elements = elements;
 			this.sortid = sortid;
 		}

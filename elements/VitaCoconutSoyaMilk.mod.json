@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "vitacoconutmilk",
     "customModelName": "vitalemontea1:vitacoconutmilk",
     "name": "Vita Coconut Soya Milk",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

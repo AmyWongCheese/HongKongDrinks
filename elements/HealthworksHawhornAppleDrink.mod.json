@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "healthworksapple",
     "customModelName": "vitalemontea1:healthworksapple",
     "name": "Healthworks Hawhorn Apple Drink",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

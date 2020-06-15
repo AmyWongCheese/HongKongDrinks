@@ -3,11 +3,11 @@ package net.mcreator.hongkongdrinks.procedure;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ProcedureVitaLemonTeaFoodEaten extends ElementsHongKongDrinks.ModElement {
-	public ProcedureVitaLemonTeaFoodEaten(ElementsHongKongDrinks instance) {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ProcedureVitaLemonTeaFoodEaten extends ElementsHongkongdrinksMod.ModElement {
+	public ProcedureVitaLemonTeaFoodEaten(ElementsHongkongdrinksMod instance) {
 		super(instance, 47);
 	}
 

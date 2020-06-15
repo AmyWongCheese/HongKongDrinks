@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "vitact",
     "customModelName": "vitalemontea1:vitact",
     "name": "Vita Chrysanthemum Tea",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

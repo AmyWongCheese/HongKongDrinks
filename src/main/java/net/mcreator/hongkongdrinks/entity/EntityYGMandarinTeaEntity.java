@@ -31,16 +31,16 @@ import net.minecraft.client.model.ModelBase;
 
 import net.mcreator.hongkongdrinks.procedure.ProcedureYGMandarinTeaEntityEntityIsHurt;
 import net.mcreator.hongkongdrinks.item.ItemYGMandarinTea;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class EntityYGMandarinTeaEntity extends ElementsHongKongDrinks.ModElement {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class EntityYGMandarinTeaEntity extends ElementsHongkongdrinksMod.ModElement {
 	public static final int ENTITYID = 29;
 	public static final int ENTITYID_RANGED = 30;
-	public EntityYGMandarinTeaEntity(ElementsHongKongDrinks instance) {
+	public EntityYGMandarinTeaEntity(ElementsHongkongdrinksMod instance) {
 		super(instance, 91);
 	}
 

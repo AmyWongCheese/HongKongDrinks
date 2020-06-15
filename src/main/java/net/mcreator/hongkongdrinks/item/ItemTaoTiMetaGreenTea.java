@@ -20,13 +20,13 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.mcreator.hongkongdrinks.procedure.ProcedureVitaLemonTeaFoodEaten;
 import net.mcreator.hongkongdrinks.procedure.ProcedureTaoTiMetaGreenTeaOnFoodRightClicked;
 import net.mcreator.hongkongdrinks.creativetab.TabHongKongDrinks;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ItemTaoTiMetaGreenTea extends ElementsHongKongDrinks.ModElement {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ItemTaoTiMetaGreenTea extends ElementsHongkongdrinksMod.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:taotimetagreentea")
 	public static final Item block = null;
-	public ItemTaoTiMetaGreenTea(ElementsHongKongDrinks instance) {
+	public ItemTaoTiMetaGreenTea(ElementsHongkongdrinksMod instance) {
 		super(instance, 36);
 	}
 

@@ -20,13 +20,13 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.mcreator.hongkongdrinks.procedure.ProcedureVitaLemonTeaFoodEaten;
 import net.mcreator.hongkongdrinks.procedure.ProcedureHealthworksRockSugarWithPearDrinkOnFoodRightClicked;
 import net.mcreator.hongkongdrinks.creativetab.TabHongKongDrinks;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ItemHealthworksRockSugarWithPearDrink extends ElementsHongKongDrinks.ModElement {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ItemHealthworksRockSugarWithPearDrink extends ElementsHongkongdrinksMod.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:healthworksrocksugarwithpeardrink")
 	public static final Item block = null;
-	public ItemHealthworksRockSugarWithPearDrink(ElementsHongKongDrinks instance) {
+	public ItemHealthworksRockSugarWithPearDrink(ElementsHongkongdrinksMod instance) {
 		super(instance, 39);
 	}
 

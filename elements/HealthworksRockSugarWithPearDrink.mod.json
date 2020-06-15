@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "healthworkspear",
     "customModelName": "vitalemontea1:healthworkspear",
     "name": "Healthworks Rock Sugar With Pear Drink",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

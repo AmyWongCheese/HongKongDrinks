@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "taotigreenteabottle1",
     "customModelName": "taotigreenteabottle1:default",
     "name": "Tao Ti Supreme Meta Green Tea",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },

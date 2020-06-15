@@ -12,12 +12,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.hongkongdrinks.item.ItemVitaGingerSoyaMilk;
 import net.mcreator.hongkongdrinks.entity.EntityVitaGingerSoyaMilkEntity;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongKongDrinks.ModElement {
-	public ProcedureVitaGingerSoyaMilkOnFoodRightClicked(ElementsHongKongDrinks instance) {
-		super(instance, 213);
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongkongdrinksMod.ModElement {
+	public ProcedureVitaGingerSoyaMilkOnFoodRightClicked(ElementsHongkongdrinksMod instance) {
+		super(instance, 216);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -42,9 +42,9 @@ public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongK
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		float x = (float) entity.posX;
-		float y = (float) entity.posY;
-		float z = (float) entity.posZ;
+		int x = (int) dependencies.get("x");
+		int y = (int) dependencies.get("y");
+		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaGingerSoyaMilk.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
@@ -64,7 +64,7 @@ public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongK
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityVitaGingerSoyaMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x), (y + 1), (z - 1), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles((x + 0.5), (y + 1), (z - 0.5), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -72,7 +72,7 @@ public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongK
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityVitaGingerSoyaMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x), (y + 1), (z + 1), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles((x + 0.5), (y + 1), (z + 1.5), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -80,7 +80,7 @@ public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongK
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityVitaGingerSoyaMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x + 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles((x + 1.5), (y + 1), (z + 0.5), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -88,7 +88,7 @@ public class ProcedureVitaGingerSoyaMilkOnFoodRightClicked extends ElementsHongK
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityVitaGingerSoyaMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x - 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles((x - 0.5), (y + 1), (z + 0.5), world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}

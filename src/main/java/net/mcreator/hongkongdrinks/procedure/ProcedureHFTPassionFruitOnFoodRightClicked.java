@@ -12,11 +12,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.hongkongdrinks.item.ItemHFTPassionFruit;
 import net.mcreator.hongkongdrinks.entity.EntityHFTPassionFruitEntity;
-import net.mcreator.hongkongdrinks.ElementsHongKongDrinks;
+import net.mcreator.hongkongdrinks.ElementsHongkongdrinksMod;
 
-@ElementsHongKongDrinks.ModElement.Tag
-public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongKongDrinks.ModElement {
-	public ProcedureHFTPassionFruitOnFoodRightClicked(ElementsHongKongDrinks instance) {
+@ElementsHongkongdrinksMod.ModElement.Tag
+public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongkongdrinksMod.ModElement {
+	public ProcedureHFTPassionFruitOnFoodRightClicked(ElementsHongkongdrinksMod instance) {
 		super(instance, 170);
 	}
 
@@ -42,11 +42,9 @@ public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongKong
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		float x = (float) entity.posX;
-		float y = (float) entity.posY;
-		float z = (float) entity.posZ;
-		float a = x - (int) x;
-		float b = z - (int) z;
+		int x = (int) dependencies.get("x");
+		int y = (int) dependencies.get("y");
+		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if ((((entity.isSneaking()) && (new ItemStack(ItemHFTPassionFruit.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
@@ -70,12 +68,12 @@ public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongKong
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
+										false, false, true).getBlockPos().getX()) + 0),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) - b + 1),
+										false, false, true).getBlockPos().getZ()) + 0),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
@@ -88,12 +86,12 @@ public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongKong
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
+										false, false, true).getBlockPos().getX()) + 0),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
+										false, false, true).getBlockPos().getZ()) + 0),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
@@ -106,12 +104,12 @@ public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongKong
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) - a + 1),
+										false, false, true).getBlockPos().getX()) + 0),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
+										false, false, true).getBlockPos().getZ()) + 0),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
@@ -124,12 +122,12 @@ public class ProcedureHFTPassionFruitOnFoodRightClicked extends ElementsHongKong
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
+										false, false, true).getBlockPos().getX()) + 0),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
+										false, false, true).getBlockPos().getZ()) + 0),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}

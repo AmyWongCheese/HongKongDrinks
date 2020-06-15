@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 1,
     "texture": "ygmelonmilk",
     "customModelName": "vitalemontea1:ygmelonmilk",
     "name": "Yeung Gwong Melon Flavored Soya Milk",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
     },
