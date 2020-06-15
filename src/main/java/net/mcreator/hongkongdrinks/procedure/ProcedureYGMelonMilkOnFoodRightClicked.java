@@ -42,9 +42,11 @@ public class ProcedureYGMelonMilkOnFoodRightClicked extends ElementsHongkongdrin
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
+			float x = (float) entity.posX;
+			float y = (float) entity.posY;
+			float z = (float) entity.posZ;
+			float a = x - (int) x;
+			float b = z - (int) z;
 		World world = (World) dependencies.get("world");
 		if ((((entity.isSneaking()) && (new ItemStack(ItemYGMelonMilk.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
@@ -63,7 +65,17 @@ public class ProcedureYGMelonMilkOnFoodRightClicked extends ElementsHongkongdrin
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityYGMelonMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x + 0.5), (y + 1), (z - 0.5), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) + a),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) - b + 1),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -71,7 +83,17 @@ public class ProcedureYGMelonMilkOnFoodRightClicked extends ElementsHongkongdrin
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityYGMelonMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x + 0.5), (y + 1), (z + 1.5), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) + a),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) + b),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -79,7 +101,17 @@ public class ProcedureYGMelonMilkOnFoodRightClicked extends ElementsHongkongdrin
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityYGMelonMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x + 1.5), (y + 1), (z + 0.5), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) - a + 1),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) + b),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
@@ -87,7 +119,17 @@ public class ProcedureYGMelonMilkOnFoodRightClicked extends ElementsHongkongdrin
 				if (!world.isRemote) {
 					Entity entityToSpawn = new EntityYGMelonMilkEntity.EntityCustom(world);
 					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles((x - 0.5), (y + 1), (z + 0.5), world.rand.nextFloat() * 360F, 0.0F);
+						entityToSpawn.setLocationAndAngles(
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getX()) + a),
+								(y + 1),
+								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
+												entity.getLook(1f).z * 5),
+										false, false, true).getBlockPos().getZ()) + b),
+								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
 				}
