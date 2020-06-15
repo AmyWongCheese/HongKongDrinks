@@ -199,7 +199,7 @@
       "type": "procedure",
       "sortid": 54,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -274,7 +274,7 @@
       "type": "procedure",
       "sortid": 57,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -357,7 +357,7 @@
       "type": "procedure",
       "sortid": 60,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -456,7 +456,7 @@
       "type": "procedure",
       "sortid": 65,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -539,7 +539,7 @@
       "type": "procedure",
       "sortid": 68,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -630,7 +630,7 @@
       "type": "procedure",
       "sortid": 72,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -721,7 +721,7 @@
       "type": "procedure",
       "sortid": 76,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -812,7 +812,7 @@
       "type": "procedure",
       "sortid": 80,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -903,7 +903,7 @@
       "type": "procedure",
       "sortid": 84,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -994,7 +994,7 @@
       "type": "procedure",
       "sortid": 88,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -4299,7 +4299,7 @@
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.12.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.hongkongdrinks",
+    "modElementsPackage": "com.neocosplayer.hongkongdrinks",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202000322116
