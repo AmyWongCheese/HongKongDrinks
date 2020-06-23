@@ -58,7 +58,7 @@ public class ProcedureHealthworksHawhornAppleDrinkOnFoodRightClicked extends Ele
 				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemHealthworksHawhornAppleDrink.block, (int) (1)).getItem(), -1,
 						(int) 1, null);
 			world.playSound((EntityPlayer) null, x, y, z,
-					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
+					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("ambient.cave")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			if (((entity.getHorizontalFacing()) == EnumFacing.NORTH)) {
 				if (!world.isRemote) {
