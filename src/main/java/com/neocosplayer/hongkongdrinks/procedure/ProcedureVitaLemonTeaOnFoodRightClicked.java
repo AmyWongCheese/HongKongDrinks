@@ -42,12 +42,13 @@ public class ProcedureVitaLemonTeaOnFoodRightClicked extends ElementsHongkongdri
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-			float x = (float) entity.posX;
-			float y = (float) entity.posY;
-			float z = (float) entity.posZ;
-			float a = x - (int) x;
-			float b = z - (int) z;
+		int x = (int) dependencies.get("x");
+		int y = (int) dependencies.get("y");
+		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
+		
+		Entity entityToSpawn = new EntityVitaLemonTeaEntity.EntityCustom(world);
+		
 		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaLemonTea.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				|| ((new ItemStack(ItemVitaLemonTea.block, (int) (1))
@@ -61,79 +62,10 @@ public class ProcedureVitaLemonTeaOnFoodRightClicked extends ElementsHongkongdri
 			world.playSound((EntityPlayer) null, x, y, z,
 					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			if (((entity.getHorizontalFacing()) == EnumFacing.NORTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaLemonTeaEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) - b + 1),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.SOUTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaLemonTeaEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.EAST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaLemonTeaEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) - a + 1),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.WEST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaLemonTeaEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			}
+
+		DrinkPlaced.placed(entity, world, entityToSpawn);
+
+
 		}
 	}
 }

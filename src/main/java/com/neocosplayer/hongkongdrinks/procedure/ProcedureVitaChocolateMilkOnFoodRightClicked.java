@@ -13,6 +13,7 @@ import net.minecraft.entity.Entity;
 import com.neocosplayer.hongkongdrinks.item.ItemVitaChocolateMilk;
 import com.neocosplayer.hongkongdrinks.entity.EntityVitaChocoMilkEntity;
 import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
+import com.neocosplayer.hongkongdrinks.procedure.DrinkPlaced;
 
 @ElementsHongkongdrinksMod.ModElement.Tag
 public class ProcedureVitaChocolateMilkOnFoodRightClicked extends ElementsHongkongdrinksMod.ModElement {
@@ -46,6 +47,9 @@ public class ProcedureVitaChocolateMilkOnFoodRightClicked extends ElementsHongko
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
+
+		Entity entityToSpawn = new EntityVitaChocoMilkEntity.EntityCustom(world);
+		
 		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaChocolateMilk.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				|| ((new ItemStack(ItemVitaChocolateMilk.block, (int) (1))
@@ -60,79 +64,9 @@ public class ProcedureVitaChocolateMilkOnFoodRightClicked extends ElementsHongko
 			world.playSound((EntityPlayer) null, x, y, z,
 					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			if (((entity.getHorizontalFacing()) == EnumFacing.NORTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaChocoMilkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.SOUTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaChocoMilkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.EAST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaChocoMilkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.WEST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaChocoMilkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			}
+
+		DrinkPlaced.placed(entity, world, entityToSpawn);
+					
 		}
 	}
 }
