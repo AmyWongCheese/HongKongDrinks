@@ -21,31 +21,13 @@ public class ProcedureVitaImperataeCaneDrinkOnFoodRightClicked extends ElementsH
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure VitaImperataeCaneDrinkOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure VitaImperataeCaneDrinkOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure VitaImperataeCaneDrinkOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure VitaImperataeCaneDrinkOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure VitaImperataeCaneDrinkOnFoodRightClicked!");
-			return;
-		}
 		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
+		Entity entityToSpawn = new EntityVitaImperataeCaneDrinkEntity.EntityCustom(world);
+		
 		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaImperataeCaneDrink.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				|| ((new ItemStack(ItemVitaImperataeCaneDrink.block, (int) (1))
@@ -60,79 +42,9 @@ public class ProcedureVitaImperataeCaneDrinkOnFoodRightClicked extends ElementsH
 			world.playSound((EntityPlayer) null, x, y, z,
 					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			if (((entity.getHorizontalFacing()) == EnumFacing.NORTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaImperataeCaneDrinkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.SOUTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaImperataeCaneDrinkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.EAST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaImperataeCaneDrinkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.WEST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new EntityVitaImperataeCaneDrinkEntity.EntityCustom(world);
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + 0),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + 0),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			}
+
+			DrinkPlaced.place(entity, world, entityToSpawn);		
+
 		}
 	}
 }

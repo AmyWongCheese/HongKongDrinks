@@ -15,7 +15,7 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 		super(instance, 226);
 	}
 
-		public static void placed(Entity entity, World world, Entity entityToSpawn) {
+		public static void place(Entity entity, World world, Entity entityToSpawn) {
 			float x = (float) entity.posX;
 			float y = (float) entity.posY;
 			float z = (float) entity.posZ;
@@ -38,7 +38,7 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 						world.spawnEntity(entityToSpawn);
 					}
 				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.SOUTH)) {
+			} else if (((entity.getHorizontalFacing()) == EnumFacing.SOUTH) || ((entity.getHorizontalFacing()) == EnumFacing.WEST)) {
 				if (!world.isRemote) {
 					if (entityToSpawn != null) {
 						entityToSpawn.setLocationAndAngles(
@@ -72,26 +72,7 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 						world.spawnEntity(entityToSpawn);
 					}
 				}
-			} else if (((entity.getHorizontalFacing()) == EnumFacing.WEST)) {
-				if (!world.isRemote) {
-					if (entityToSpawn != null) {
-						entityToSpawn.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
-								(y + 1),
-								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
-								world.rand.nextFloat() * 360F, 0.0F);
-						world.spawnEntity(entityToSpawn);
-					}
-				}
-			}
-
-			
+			} 
 		}
 
 
