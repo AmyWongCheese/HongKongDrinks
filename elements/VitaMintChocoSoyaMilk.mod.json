@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitamintchoco",
+    "texture": "yglemonteaitem",
     "customModelName": "vitalemontea1:vitamintchoco",
     "name": "Vita Mint Chocolate Soya Milk",
     "specialInfo": [],

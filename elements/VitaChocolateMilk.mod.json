@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitachocomilk",
+    "texture": "yglemonteaitem",
     "customModelName": "vitalemontea1:vitachocomilk",
     "name": "Vita Chocolate Milk",
     "specialInfo": [],

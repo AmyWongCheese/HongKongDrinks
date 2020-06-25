@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygcoconutmilk",
+    "texture": "yglemonteaitem",
     "customModelName": "vitalemontea1:ygcoconutmilk",
     "name": "Yeung Gwong Coconut Flavored Soya Milk",
     "specialInfo": [],

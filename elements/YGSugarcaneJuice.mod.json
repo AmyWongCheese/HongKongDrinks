@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygsugarcane",
+    "texture": "yglemonteaitem",
     "customModelName": "vitalemontea1:ygsugarcane",
     "name": "Yeung Gwong Sugarcane Juice",
     "specialInfo": [],

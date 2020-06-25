@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "taotioolong",
+    "texture": "yglemonteaitem",
     "customModelName": "vitalemontea1:taotioolong",
     "name": "Tao Ti Supreme Oolong Tea",
     "specialInfo": [],

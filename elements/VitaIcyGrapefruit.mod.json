@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitaicygrapefruit",
+    "texture": "yglemonteaitem",
     "customModelName": "vitalemontea1:vitaicygrapefruit",
     "name": "Vita Icy Pink Grapefruit Tea",
     "specialInfo": [],
