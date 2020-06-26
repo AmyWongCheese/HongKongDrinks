@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "yglemonteaitem",
+    "texture": "hftmandarinaloe_item",
     "customModelName": "hungfooktong:hftmandarinaloe",
     "name": "Hung Fook Tong Mandarin Juice With Aloe Drink",
     "specialInfo": [],

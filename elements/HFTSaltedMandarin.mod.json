@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "yglemonteaitem",
+    "texture": "hftsaltmandarin_item",
     "customModelName": "hungfooktong:hftsaltmandarin",
     "name": "Hung Fook Tong Salted Mandarin Drink",
     "specialInfo": [],

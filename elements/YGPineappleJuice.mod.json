@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "yglemonteaitem",
+    "texture": "pineapplejuice_item",
     "customModelName": "vitalemontea1:pineapplejuice",
     "name": "Yeung Gwong Pineapple Juice",
     "specialInfo": [],
