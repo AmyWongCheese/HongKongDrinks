@@ -28,12 +28,12 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
+										false, false, true).getBlockPos().getX()) + a + 1),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) - b + 1),
+										false, false, true).getBlockPos().getZ()) - b),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
@@ -45,12 +45,12 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) + a),
+										false, false, true).getBlockPos().getX()) + a + 1),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
+										false, false, true).getBlockPos().getZ()) + b + 1),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
@@ -62,12 +62,12 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getX()) - a + 1),
+										false, false, true).getBlockPos().getX()) - a),
 								(y + 1),
 								((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 												entity.getLook(1f).z * 5),
-										false, false, true).getBlockPos().getZ()) + b),
+										false, false, true).getBlockPos().getZ()) + b + 1),
 								world.rand.nextFloat() * 360F, 0.0F);
 						world.spawnEntity(entityToSpawn);
 					}
