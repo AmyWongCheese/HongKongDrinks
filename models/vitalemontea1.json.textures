@@ -5,42 +5,6 @@
         "0": "vitalemon"
       },
       "name": "default"
-    },
-    "yglemontea": {
-      "map": {
-        "0": "yglemon"
-      },
-      "name": "yglemontea"
-    },
-    "applegreentea": {
-      "map": {
-        "0": "applegreentea_e"
-      },
-      "name": "applegreentea"
-    },
-    "healthworksapple": {
-      "map": {
-        "0": "healthworksapple_e"
-      },
-      "name": "healthworksapple"
-    },
-    "healthworkspear": {
-      "map": {
-        "0": "healthworkspear_e"
-      },
-      "name": "healthworkspear"
-    },
-    "mandarintea": {
-      "map": {
-        "0": "mandarintea_e"
-      },
-      "name": "mandarintea"
-    },
-    "pineapplejuice": {
-      "map": {
-        "0": "pineapplejuice_e"
-      },
-      "name": "pineapplejuice"
     }
   }
 }
