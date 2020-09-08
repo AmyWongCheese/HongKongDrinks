@@ -36,8 +36,7 @@ public class ProcedureVitaLycheeLoveTeaRightClickedInAir extends ElementsHongkon
 								? ((EntityLivingBase) entity).getHeldItemMainhand()
 								: ItemStack.EMPTY).getItem())))) {
 			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemVitaLycheeLoveTea.block, (int) (1)).getItem(), -1, (int) 1,
-						null);
+				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemVitaLycheeLoveTea.block, (int) (1)).getItem(), -1, (int) 1, null);
 			world.playSound((EntityPlayer) null, x, y, z,
 					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);

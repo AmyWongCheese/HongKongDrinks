@@ -3,22 +3,23 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:glass_bottle"
+      "item": "minecraft:paper"
     },
     {
       "item": "minecraft:dye",
-      "data": 9
+      "data": 10
     },
     {
       "type": "forge:ore_dict",
       "ore": "listAllsugar"
     },
     {
-      "item": "harvestcraft:lycheeitem"
+      "type": "forge:ore_dict",
+      "ore": "cropApple"
     },
     {
-      "item": "minecraft:double_plant",
-      "data": 4
+      "type": "forge:ore_dict",
+      "ore": "cropMango"
     },
     {
       "type": "forge:ore_dict",
@@ -30,7 +31,7 @@
     }
   ],
   "result": {
-    "item": "hongkongdrinks:vita_lychee_love_tea",
+    "item": "hongkongdrinks:vita_apple_mango_tea",
     "count": 1
   }
 }

@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "ENTITY": 98,
+    "ENTITY": 100,
     "GUI": 1
   },
   "mod_elements": [
@@ -4222,14 +4222,110 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_sweet_potato_soya_milk_recipe"
+    },
+    {
+      "name": "VitaAppleMangoTea",
+      "type": "food",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_apple_mango_tea"
+    },
+    {
+      "name": "VitaAppleMangoTeaEntity",
+      "type": "mob",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 99,
+        "1": 100
+      },
+      "registry_name": "vita_apple_mango_tea_entity"
+    },
+    {
+      "name": "VitaAppleMangoTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_apple_mango_tea_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaAppleMangoTeaRightClickedInAir",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_apple_mango_tea_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaAppleMangoTeaRecipe",
+      "type": "recipe",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_apple_mango_tea_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "zh_tw": {
-      "entity.vitachocosoyamilkentity.name": "維他朱古力豆奶",
       "entity.taotiwhiteteaentity.name": "道地極品白茶",
+      "entity.vitachocosoyamilkentity.name": "維他朱古力豆奶",
       "item.vitasoyamilk.name": "維他奶",
       "item.vitaapplegreentea.name": "維他蘋果綠茶",
       "entity.ygorangejuiceentity.name": "陽光橙汁",
@@ -4238,12 +4334,14 @@
       "item.healthworkshawhornappledrink.name": "健康工房山楂蘋果",
       "entity.taotimetateaentity.name": "道地極品解茶",
       "item.vitamaltsoyamilk.name": "維他麥精豆奶",
+      "entity.vita_apple_mango_tea_entity.name": "維他果然系蘋果芒果茶",
       "item.yghoneylycheetea.name": "陽光蜂蜜荔枝茶",
       "entity.taotioolongteaentity.name": "道地極品烏龍茶",
       "item.vitaguavajuice.name": "維他番石榴汁",
       "item.ygorangejuice.name": "陽光橙汁",
       "item.hftpassionfruit.name": "鴻福堂百香果蜜",
       "entity.hftpassionfruitentity.name": "鴻福堂百香果蜜",
+      "item.vita_apple_mango_tea.name": "維他果然系蘋果芒果茶",
       "entity.vitaicygrapefruitentity.name": "維他果然系冰震紅西柚",
       "item.hftsaltedmandarin.name": "鴻福堂咸柑桔",
       "entity.vitaapplegreenteaentity.name": "維他蘋果綠茶",
@@ -4331,12 +4429,14 @@
       "entity.taotimetateaentity.name": "Tao Ti Supreme Meta Tea",
       "item.healthworkshawhornappledrink.name": "Healthworks Hawhorn Apple Drink",
       "item.vitamaltsoyamilk.name": "Vita Malted Soya Milk",
+      "entity.vita_apple_mango_tea_entity.name": "Vita Apple Mango Tea",
       "item.yghoneylycheetea.name": "Yeung Gwong Honey Lychee Tea",
       "entity.taotioolongteaentity.name": "Tao Ti Supreme Oolong Tea",
       "item.vitaguavajuice.name": "Vita Guava Juice",
       "item.ygorangejuice.name": "Yeung Gwong Orange Juice",
       "item.hftpassionfruit.name": "Hung Fook Tong Passion Fruit with Honey Drink",
       "entity.hftpassionfruitentity.name": "Hung Fook Tong Passion Fruit with Honey Drink",
+      "item.vita_apple_mango_tea.name": "Vita Apple Mango Tea",
       "entity.vitaicygrapefruitentity.name": "Vita Icy Pink Grapefruit Tea",
       "item.hftsaltedmandarin.name": "Hung Fook Tong Salted Mandarin Drink",
       "entity.vitaapplegreenteaentity.name": "Vita Apple Green Tea",
