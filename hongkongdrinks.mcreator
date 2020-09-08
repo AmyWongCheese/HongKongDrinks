@@ -4405,14 +4405,32 @@
           }
         ]
       }
+    },
+    {
+      "name": "VitasoyGoBananaPancakeDrinkRecipe",
+      "type": "recipe",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vitasoy_go_banana_pancake_drink_recipe"
+    },
+    {
+      "name": "VitasoyGOBananaPancakeDrinkRecipe2",
+      "type": "recipe",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vitasoy_go_banana_pancake_drink_recipe_2"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "zh_tw": {
-      "entity.taotiwhiteteaentity.name": "道地極品白茶",
       "entity.vitachocosoyamilkentity.name": "維他朱古力豆奶",
+      "entity.taotiwhiteteaentity.name": "道地極品白茶",
       "item.vitasoyamilk.name": "維他奶",
       "item.vitaapplegreentea.name": "維他蘋果綠茶",
       "entity.ygorangejuiceentity.name": "陽光橙汁",
@@ -4508,8 +4526,8 @@
       "item.ygmangojuice.name": "陽光芒果汁"
     },
     "en_us": {
-      "entity.vitachocosoyamilkentity.name": "Vita Chocolate Soya Milk",
       "entity.taotiwhiteteaentity.name": "Tao Ti Supreme White Tea",
+      "entity.vitachocosoyamilkentity.name": "Vita Chocolate Soya Milk",
       "item.vitasoyamilk.name": "Vitasoy Soya Milk",
       "item.vitaapplegreentea.name": "Vita Apple Green Tea",
       "entity.ygorangejuiceentity.name": "Yeung Gwong Orange Juice",
