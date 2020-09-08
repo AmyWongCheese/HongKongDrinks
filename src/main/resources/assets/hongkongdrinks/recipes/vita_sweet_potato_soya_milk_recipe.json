@@ -1,0 +1,33 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 5
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropSweetpotato"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropSoybean"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_sweet_potato_soya_milk",
+    "count": 1
+  }
+}
