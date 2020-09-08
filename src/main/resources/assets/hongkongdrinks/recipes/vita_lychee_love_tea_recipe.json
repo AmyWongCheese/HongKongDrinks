@@ -1,0 +1,36 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 9
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "item": "harvestcraft:lycheeitem"
+    },
+    {
+      "item": "minecraft:double_plant",
+      "data": 4
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropTea"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_lychee_love_tea",
+    "count": 1
+  }
+}

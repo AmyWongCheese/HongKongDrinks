@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "GUI": 1,
-    "ENTITY": 94
+    "ENTITY": 96,
+    "GUI": 1
   },
   "mod_elements": [
     {
@@ -9,7 +9,7 @@
       "type": "food",
       "sortid": 1,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {}
     },
     {
@@ -4021,14 +4021,119 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "drink_placed"
+    },
+    {
+      "name": "VitaLycheeLoveTea",
+      "type": "food",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_lychee_love_tea"
+    },
+    {
+      "name": "VitaLycheeLoveTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_lychee_love_tea_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaLycheeLoveTeaEntity",
+      "type": "mob",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 95,
+        "1": 96
+      },
+      "registry_name": "vita_lychee_love_tea_entity"
+    },
+    {
+      "name": "VitaLycheeLoveTeaRightClickedInAir",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_lychee_love_tea_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaLycheeLoveTeaRecipe",
+      "type": "recipe",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_lychee_love_tea_recipe"
+    },
+    {
+      "name": "VitaLycheeLoveTeaFoodcraft",
+      "type": "recipe",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_lychee_love_tea_foodcraft"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "zh_tw": {
-      "entity.vitachocosoyamilkentity.name": "ºû¥L¦¶¥j¤O¨§¥¤",
       "entity.taotiwhiteteaentity.name": "¹D¦a·¥«~¥Õ¯ù",
+      "entity.vitachocosoyamilkentity.name": "ºû¥L¦¶¥j¤O¨§¥¤",
       "item.vitasoyamilk.name": "ºû¥L¥¤",
       "item.vitaapplegreentea.name": "ºû¥LÄ«ªGºñ¯ù",
       "entity.ygorangejuiceentity.name": "¶§¥ú¾í¥Ä",
@@ -4066,6 +4171,7 @@
       "entity.ygchrysanthemumteaentity.name": "¶§¥úµâªá¯ù",
       "entity.vitagingersoyamilkentity.name": "ºû¥LÁ¤¨ý¨§¥¤",
       "entity.vitablackcurrantjuiceentity.name": "ºû¥L¶Â¥[¨Ú¤l¥Ä",
+      "item.vita_lychee_love_tea.name": "ºû¥Lª´ºÀ¯ïªK¯ù",
       "entity.ygmelonmilkentity.name": "¶§¥ú»e¥Ê¨§¥¤",
       "item.vitasugarcanejuice.name": "ºû¥L¥Ì½©¥Ä",
       "entity.vitalemonteaentity.name": "ºû¥LÂfÂc¯ù",
@@ -4094,6 +4200,7 @@
       "item.vitamangojuice.name": "ºû¥L¨~ªG¥Ä",
       "entity.ygpeachteaentity.name": "¶§¥ú»e®ç¯ù",
       "item.yeunggwonglemontea.name": "¶§¥úÂfÂc¯ù",
+      "entity.vita_lychee_love_tea_entity.name": "ºû¥Lª´ºÀ¯ïªK¯ù",
       "itemGroup.tabhongkongdrinks": "­»´ä¶¼«~",
       "entity.ygapplejuiceentity.name": "¶§¥úÄ«ªG¥Ä",
       "item.vitachrysanthemumtea.name": "ºû¥Lµâªá¯ù",
@@ -4155,6 +4262,7 @@
       "entity.ygchrysanthemumteaentity.name": "Yeung Gwong Chrysanthemum Tea",
       "entity.vitagingersoyamilkentity.name": "Vita Ginger Soya Milk",
       "entity.vitablackcurrantjuiceentity.name": "Vita Blackcurrant Juice",
+      "item.vita_lychee_love_tea.name": "Vita Lychee Love Tea",
       "entity.ygmelonmilkentity.name": "Yeung Gwong Melon Flavored Soya Milk",
       "item.vitasugarcanejuice.name": "Vita Sugarcane Juice",
       "entity.vitalemonteaentity.name": "Vita Lemon Tea",
@@ -4183,6 +4291,7 @@
       "item.vitamangojuice.name": "Vita Mango Juice",
       "entity.ygpeachteaentity.name": "Yeung Gwong Peach Tea",
       "item.yeunggwonglemontea.name": "Yeung Gwong Lemon Tea",
+      "entity.vita_lychee_love_tea_entity.name": "Vita Lychee Love Tea",
       "itemGroup.tabhongkongdrinks": "Hong Kong Drinks",
       "entity.ygapplejuiceentity.name": "Yeung Gwong Apple Juice",
       "item.vitachrysanthemumtea.name": "Vita Chrysanthemum Tea",
