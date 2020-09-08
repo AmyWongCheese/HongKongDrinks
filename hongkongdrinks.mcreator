@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "ENTITY": 100,
+    "ENTITY": 102,
     "GUI": 1
   },
   "mod_elements": [
@@ -4318,6 +4318,93 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_apple_mango_tea_recipe"
+    },
+    {
+      "name": "VitasoyGOBananaPancakeDrink",
+      "type": "food",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vitasoy_go_banana_pancake_drink"
+    },
+    {
+      "name": "VitasoyGOBananaPancakeDrinkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vitasoy_go_banana_pancake_drink_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitasoyGOBananaPancakeDrinkEntity",
+      "type": "mob",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 101,
+        "1": 102
+      },
+      "registry_name": "vitasoy_go_banana_pancake_drink_entity"
+    },
+    {
+      "name": "VitasoyGOBananaPancakeDrinkRightClickedInAir",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vitasoy_go_banana_pancake_drink_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4413,8 +4500,10 @@
       "item.ygmandarintea.name": "¶§¥ú¬a­»¯ù",
       "entity.vitamintchocosoyamilkentity.name": "ºû¥LÁ¡²ü¦¶¥j¤O¨ý¨§¥¤",
       "item.ygpeachtea.name": "¶§¥ú»e®ç¯ù",
+      "item.vitasoy_go_banana_pancake_drink.name": "Vitasoy GO Banana Pancake Drink",
       "item.vitahoneylimedrink.name": "²M¤ß´Ì¥V»e«CÂf",
       "item.vitaimperataecanedrink.name": "²M¤ß´Ì¦Ë½©­T®Ú",
+      "entity.vitasoy_go_banana_pancake_drink_entity.name": "Vitasoy GO Banana Pancake Drink",
       "item.ygcoconutmilk.name": "¶§¥ú·¦¤l¨ý¨§¥¤",
       "item.ygmangojuice.name": "¶§¥ú¨~ªG¥Ä"
     },
@@ -4508,8 +4597,10 @@
       "item.ygmandarintea.name": "Yeung Gwong Mandarin Tea",
       "entity.vitamintchocosoyamilkentity.name": "Vita Mint Chocolate Soya Milk",
       "item.ygpeachtea.name": "Yeung Gwong Peach Tea",
+      "item.vitasoy_go_banana_pancake_drink.name": "Vitasoy GO Banana Pancake Drink",
       "item.vitahoneylimedrink.name": "Vita Honey Lime Drink",
       "item.vitaimperataecanedrink.name": "Vita Imperatae Cane Drink",
+      "entity.vitasoy_go_banana_pancake_drink_entity.name": "Vitasoy GO Banana Pancake Drink",
       "item.ygcoconutmilk.name": "Yeung Gwong Coconut Flavored Soya Milk",
       "item.ygmangojuice.name": "Yeung Gwong Mango Juice"
     }
