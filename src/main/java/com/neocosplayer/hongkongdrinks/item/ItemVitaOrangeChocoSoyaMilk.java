@@ -17,17 +17,17 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
-import com.neocosplayer.hongkongdrinks.procedure.ProcedureVitaLemonTeaOnFoodRightClicked;
+import com.neocosplayer.hongkongdrinks.procedure.ProcedureVitaOrangeChocoSoyaMilkRightClickedInAir;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureVitaLemonTeaFoodEaten;
 import com.neocosplayer.hongkongdrinks.creativetab.TabHongKongDrinks;
 import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
 
 @ElementsHongkongdrinksMod.ModElement.Tag
-public class ItemVitaLemonTea extends ElementsHongkongdrinksMod.ModElement {
-	@GameRegistry.ObjectHolder("hongkongdrinks:vitalemontea")
+public class ItemVitaOrangeChocoSoyaMilk extends ElementsHongkongdrinksMod.ModElement {
+	@GameRegistry.ObjectHolder("hongkongdrinks:vita_orange_choco_soya_milk")
 	public static final Item block = null;
-	public ItemVitaLemonTea(ElementsHongkongdrinksMod instance) {
-		super(instance, 1);
+	public ItemVitaOrangeChocoSoyaMilk(ElementsHongkongdrinksMod instance) {
+		super(instance, 251);
 	}
 
 	@Override
@@ -38,13 +38,13 @@ public class ItemVitaLemonTea extends ElementsHongkongdrinksMod.ModElement {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("hongkongdrinks:vitalemontea", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("hongkongdrinks:vita_orange_choco_soya_milk", "inventory"));
 	}
 	public static class ItemFoodCustom extends ItemFood {
 		public ItemFoodCustom() {
 			super(4, 0.3f, false);
-			setUnlocalizedName("vitalemontea");
-			setRegistryName("vitalemontea");
+			setUnlocalizedName("vita_orange_choco_soya_milk");
+			setRegistryName("vita_orange_choco_soya_milk");
 			setCreativeTab(TabHongKongDrinks.tab);
 			setMaxStackSize(64);
 		}
@@ -68,7 +68,7 @@ public class ItemVitaLemonTea extends ElementsHongkongdrinksMod.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureVitaLemonTeaOnFoodRightClicked.executeProcedure($_dependencies);
+				ProcedureVitaOrangeChocoSoyaMilkRightClickedInAir.executeProcedure($_dependencies);
 			}
 			return ar;
 		}

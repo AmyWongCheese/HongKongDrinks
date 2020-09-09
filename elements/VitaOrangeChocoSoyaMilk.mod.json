@@ -3,9 +3,9 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitalemontea_item",
+    "texture": "vitaorangechocosoya_item",
     "customModelName": "vitalemontea1:default",
-    "name": "Vita Lemon Tea",
+    "name": "Vita Orange Chocolate Soya Milk",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:HongKongDrinks"
@@ -19,7 +19,7 @@
     "animation": "drink",
     "hasGlow": false,
     "onRightClicked": {
-      "name": "VitaLemonTeaOnFoodRightClicked"
+      "name": "VitaOrangeChocoSoyaMilkRightClickedInAir"
     },
     "onEaten": {
       "name": "VitaLemonTeaFoodEaten"

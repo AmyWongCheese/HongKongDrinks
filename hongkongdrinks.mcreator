@@ -1,7 +1,7 @@
 {
   "id_map": {
     "GUI": 1,
-    "ENTITY": 104
+    "ENTITY": 106
   },
   "mod_elements": [
     {
@@ -4528,6 +4528,102 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_cookies_cream_soya_milk_recipe_2"
+    },
+    {
+      "name": "VitaOrangeChocoSoyaMilk",
+      "type": "food",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_orange_choco_soya_milk"
+    },
+    {
+      "name": "VitaOrangeChocoSoyaMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_orange_choco_soya_milk_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaOrangeChocoSoyaMilkEntity",
+      "type": "mob",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 105,
+        "1": 106
+      },
+      "registry_name": "vita_orange_choco_soya_milk_entity"
+    },
+    {
+      "name": "VitaOrangeChocoSoyaMilkRightClickedInAir",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_orange_choco_soya_milk_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaOrangeChocoSoyaMilkRecipe",
+      "type": "recipe",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_orange_choco_soya_milk_recipe"
     }
   ],
   "variable_elements": [],
@@ -4576,6 +4672,7 @@
       "entity.vitasugarcanejuiceentity.name": "ºû¥L¥Ì½©¥Ä",
       "item.ygmandarintea.name": "¶§¥ú¬a­»¯ù",
       "entity.vitamintchocosoyamilkentity.name": "ºû¥LÁ¡²ü¦¶¥j¤O¨ý¨§¥¤",
+      "entity.vita_orange_choco_soya_milk_entity.name": "ºû¥L¾í¦¶¥j¤O¨ý¨§¥¤",
       "item.vitahoneylimedrink.name": "²M¤ß´Ì¥V»e«CÂf",
       "item.ygcoconutmilk.name": "¶§¥ú·¦¤l¨ý¨§¥¤",
       "entity.taotiwhiteteaentity.name": "¹D¦a·¥«~¥Õ¯ù",
@@ -4593,6 +4690,7 @@
       "item.vita_apple_mango_tea.name": "ºû¥LªGµM¨tÄ«ªG¨~ªG¯ù",
       "item.hftsaltedmandarin.name": "ÂEºÖ°ó«w¬a®Ü",
       "item.taotioolongtea.name": "¹D¦a·¥«~¯QÀs¯ù",
+      "item.vita_orange_choco_soya_milk.name": "ºû¥L¾í¦¶¥j¤O¨ý¨§¥¤",
       "entity.hftginsenghoneyentity.name": "ÂEºÖ°óªáºXçx»e",
       "entity.taotimetagreenteaentity.name": "¹D¦a·¥«~¸Ñºñ¯ù",
       "entity.healthworksrocksugarwithpeardrinkentity.name": "°·±d¤u©Ð¦B¿}³·±ù",
@@ -4675,6 +4773,7 @@
       "entity.vitasugarcanejuiceentity.name": "Vita Sugarcane Juice",
       "item.ygmandarintea.name": "Yeung Gwong Mandarin Tea",
       "entity.vitamintchocosoyamilkentity.name": "Vita Mint Chocolate Soya Milk",
+      "entity.vita_orange_choco_soya_milk_entity.name": "Vita Orange Chocolate Soya Milk",
       "item.vitahoneylimedrink.name": "Vita Honey Lime Drink",
       "item.ygcoconutmilk.name": "Yeung Gwong Coconut Flavored Soya Milk",
       "entity.taotiwhiteteaentity.name": "Tao Ti Supreme White Tea",
@@ -4692,6 +4791,7 @@
       "item.vita_apple_mango_tea.name": "Vita Apple Mango Tea",
       "item.hftsaltedmandarin.name": "Hung Fook Tong Salted Mandarin Drink",
       "item.taotioolongtea.name": "Tao Ti Supreme Oolong Tea",
+      "item.vita_orange_choco_soya_milk.name": "Vita Orange Chocolate Soya Milk",
       "entity.hftginsenghoneyentity.name": "Hung Fook Tong American Ginseng With Honey Drink",
       "entity.healthworksrocksugarwithpeardrinkentity.name": "Healthworks Rock Sugar With Pear Drink",
       "entity.taotimetagreenteaentity.name": "Tao Ti Meta Green Tea",
