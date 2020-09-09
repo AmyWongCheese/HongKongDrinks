@@ -1,0 +1,33 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 11
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropPear"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropTea"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllwater"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_chinese_pear_tea",
+    "count": 1
+  }
+}
