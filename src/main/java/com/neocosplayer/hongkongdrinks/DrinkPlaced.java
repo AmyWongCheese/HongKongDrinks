@@ -2,7 +2,10 @@ package com.neocosplayer.hongkongdrinks.procedure;
 
 import net.minecraft.world.World;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 
 import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
 
@@ -21,6 +24,11 @@ public class DrinkPlaced extends ElementsHongkongdrinksMod.ModElement {
 			float z = (float) entity.posZ;
 			float a = x - (int) x;
 			float b = z - (int) z;
+
+			world.playSound((EntityPlayer) null, x, y, z,
+					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
+					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			
 			if (((entity.getHorizontalFacing()) == EnumFacing.NORTH)) {
 				if (!world.isRemote) {
 					if (entityToSpawn != null) {

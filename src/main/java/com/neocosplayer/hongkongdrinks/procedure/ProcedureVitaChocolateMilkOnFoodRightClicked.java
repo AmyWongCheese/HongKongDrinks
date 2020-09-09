@@ -1,8 +1,6 @@
 package com.neocosplayer.hongkongdrinks.procedure;
 
 import net.minecraft.world.World;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.init.Blocks;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,7 +10,6 @@ import net.minecraft.entity.Entity;
 import com.neocosplayer.hongkongdrinks.item.ItemVitaChocolateMilk;
 import com.neocosplayer.hongkongdrinks.entity.EntityVitaChocoMilkEntity;
 import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
-import com.neocosplayer.hongkongdrinks.procedure.DrinkPlaced;
 
 @ElementsHongkongdrinksMod.ModElement.Tag
 public class ProcedureVitaChocolateMilkOnFoodRightClicked extends ElementsHongkongdrinksMod.ModElement {
@@ -39,9 +36,6 @@ public class ProcedureVitaChocolateMilkOnFoodRightClicked extends ElementsHongko
 			if (entity instanceof EntityPlayer)
 				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemVitaChocolateMilk.block, (int) (1)).getItem(), -1, (int) 1,
 						null);
-			world.playSound((EntityPlayer) null, x, y, z,
-					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.wood.place")),
-					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 
 			DrinkPlaced.place(entity, world, entityToSpawn);
 					

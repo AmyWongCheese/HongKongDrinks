@@ -7,14 +7,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
-import com.neocosplayer.hongkongdrinks.item.ItemYGChrysanthemumTea;
-import com.neocosplayer.hongkongdrinks.entity.EntityYGChrysanthemumTeaEntity;
+import com.neocosplayer.hongkongdrinks.item.ItemVitaRedBeanSoyaMilk;
+import com.neocosplayer.hongkongdrinks.entity.EntityVitaRedBeanSoyaMilkEntity;
 import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
 
 @ElementsHongkongdrinksMod.ModElement.Tag
-public class ProcedureYGChrysanthemumTeaOnFoodRightClicked extends ElementsHongkongdrinksMod.ModElement {
-	public ProcedureYGChrysanthemumTeaOnFoodRightClicked(ElementsHongkongdrinksMod instance) {
-		super(instance, 80);
+public class ProcedureVitaRedBeanSoyaMilkRightClickedInAir extends ElementsHongkongdrinksMod.ModElement {
+	public ProcedureVitaRedBeanSoyaMilkRightClickedInAir(ElementsHongkongdrinksMod instance) {
+		super(instance, 261);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -23,18 +23,18 @@ public class ProcedureYGChrysanthemumTeaOnFoodRightClicked extends ElementsHongk
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		Entity entityToSpawn = new EntityYGChrysanthemumTeaEntity.EntityCustom(world);
+		Entity entityToSpawn = new EntityVitaRedBeanSoyaMilkEntity.EntityCustom(world);
 		
-		if ((((entity.isSneaking()) && (new ItemStack(ItemYGChrysanthemumTea.block, (int) (1))
+		if ((((entity.isSneaking()) && (new ItemStack(ItemVitaRedBeanSoyaMilk.block, (int) (1))
 				.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
-				|| ((new ItemStack(ItemYGChrysanthemumTea.block, (int) (1))
+				|| ((new ItemStack(ItemVitaRedBeanSoyaMilk.block, (int) (1))
 						.getItem() == ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemOffhand() : ItemStack.EMPTY)
 								.getItem())
 						&& (new ItemStack(Blocks.AIR, (int) (1)).getItem() == ((entity instanceof EntityLivingBase)
 								? ((EntityLivingBase) entity).getHeldItemMainhand()
 								: ItemStack.EMPTY).getItem())))) {
 			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemYGChrysanthemumTea.block, (int) (1)).getItem(), -1, (int) 1,
+				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemVitaRedBeanSoyaMilk.block, (int) (1)).getItem(), -1, (int) 1,
 						null);
 
 			DrinkPlaced.place(entity, world, entityToSpawn);
