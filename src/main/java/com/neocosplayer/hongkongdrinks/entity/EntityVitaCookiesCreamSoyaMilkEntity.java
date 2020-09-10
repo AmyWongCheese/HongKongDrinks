@@ -48,7 +48,7 @@ public class EntityVitaCookiesCreamSoyaMilkEntity extends ElementsHongkongdrinks
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class)
 				.id(new ResourceLocation("hongkongdrinks", "vita_cookies_cream_soya_milk_entity"), ENTITYID)
-				.name("vita_cookies_cream_soya_milk_entity").tracker(100, 3, true).egg(-1, -1).build());
+				.name("vita_cookies_cream_soya_milk_entity").tracker(100, 3, true).build());
 	}
 
 	@Override

@@ -12,9 +12,7 @@ public static class Modelvitabottle extends ModelBase {
 		bone = new ModelRenderer(this);
 		bone.setRotationPoint(0.0F, 24.0F, 0.0F);
 		bone.cubeList.add(new ModelBox(bone, 12, 0, -1.0F, -12.0F, -1.0F, 2, 2, 2, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 0, 0, -2.0F, -10.0F, -2.0F, 4, 3, 4, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 0, 11, -1.75F, -7.0F, -1.75F, 3, 4, 3, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 0, 7, -2.0F, -3.0F, -2.0F, 4, 3, 4, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 0, 0, -2.0F, -10.0F, -2.0F, 4, 10, 4, 0.0F, false));
 	}
 
 	@Override
