@@ -8,7 +8,7 @@ import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
 @ElementsHongkongdrinksMod.ModElement.Tag
 public class ProcedureVitaLemonTeaFoodEaten extends ElementsHongkongdrinksMod.ModElement {
 	public ProcedureVitaLemonTeaFoodEaten(ElementsHongkongdrinksMod instance) {
-		super(instance, 47);
+		super(instance, 58);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

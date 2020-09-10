@@ -41,7 +41,7 @@ public class EntityVitaBlackcurrantJuiceEntity extends ElementsHongkongdrinksMod
 	public static final int ENTITYID = 21;
 	public static final int ENTITYID_RANGED = 22;
 	public EntityVitaBlackcurrantJuiceEntity(ElementsHongkongdrinksMod instance) {
-		super(instance, 74);
+		super(instance, 85);
 	}
 
 	@Override

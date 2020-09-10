@@ -12,7 +12,7 @@ import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
 @ElementsHongkongdrinksMod.ModElement.Tag
 public class ProcedureHealthworksRockSugarWithPearDrinkEntityEntityIsHurt extends ElementsHongkongdrinksMod.ModElement {
 	public ProcedureHealthworksRockSugarWithPearDrinkEntityEntityIsHurt(ElementsHongkongdrinksMod instance) {
-		super(instance, 163);
+		super(instance, 174);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

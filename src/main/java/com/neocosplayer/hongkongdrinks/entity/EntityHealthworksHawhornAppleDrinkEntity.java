@@ -41,7 +41,7 @@ public class EntityHealthworksHawhornAppleDrinkEntity extends ElementsHongkongdr
 	public static final int ENTITYID = 63;
 	public static final int ENTITYID_RANGED = 64;
 	public EntityHealthworksHawhornAppleDrinkEntity(ElementsHongkongdrinksMod instance) {
-		super(instance, 158);
+		super(instance, 169);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import com.neocosplayer.hongkongdrinks.ElementsHongkongdrinksMod;
 @ElementsHongkongdrinksMod.ModElement.Tag
 public class TabHongKongDrinks extends ElementsHongkongdrinksMod.ModElement {
 	public TabHongKongDrinks(ElementsHongkongdrinksMod instance) {
-		super(instance, 46);
+		super(instance, 57);
 	}
 
 	@Override
