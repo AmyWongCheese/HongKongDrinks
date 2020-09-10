@@ -1,7 +1,7 @@
 {
   "id_map": {
     "GUI": 1,
-    "ENTITY": 110
+    "ENTITY": 112
   },
   "mod_elements": [
     {
@@ -4825,6 +4825,102 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_red_bean_soya_milk_sakura"
+    },
+    {
+      "name": "VitaStrawberrySoyaMilk",
+      "type": "food",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_strawberry_soya_milk"
+    },
+    {
+      "name": "VitaStrawberrySoyaMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_strawberry_soya_milk_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaStrawberrySoyaMilkEntity",
+      "type": "mob",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 111,
+        "1": 112
+      },
+      "registry_name": "vita_strawberry_soya_milk_entity"
+    },
+    {
+      "name": "VitaStrawberrySoyaMilkRightClickedInAir",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_strawberry_soya_milk_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaStrawberrySoyaMilkRecipe",
+      "type": "recipe",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_strawberry_soya_milk_recipe"
     }
   ],
   "variable_elements": [],
@@ -4842,16 +4938,16 @@
       "entity.vitachocomilkentity.name": "ºû¥L¦¶¥j¤O¥¤",
       "entity.healthworkshawhornappledrinkentity.name": "°·±d¤u©Ð¤sÝÓÄ«ªG",
       "entity.vitasoyamilkentity.name": "ºû¥L¥¤",
-      "entity.vitaimperataecanedrinkentity.name": "²M¤ß´Ì¦Ë½©­T®Ú",
       "item.ygsugarcanejuice.name": "¶§¥ú½©¥Ä¶¼«~",
+      "entity.vitaimperataecanedrinkentity.name": "²M¤ß´Ì¦Ë½©­T®Ú",
       "entity.vitamangojuiceentity.name": "ºû¥L¨~ªG¥Ä",
       "item.taotigrapejuice.name": "¹D¦a¥¨®p´£¤l¥Ä",
       "item.vitachocolatemilk.name": "ºû¥L¦¶¥j¤O¥¤",
       "entity.vita_sweet_potato_soya_milk_entity.name": "ºû¥L¨RÃ·µµÁ¦¨§¥¤",
       "entity.vitablackcurrantjuiceentity.name": "ºû¥L¶Â¥[¨Ú¤l¥Ä",
       "item.vita_lychee_love_tea.name": "ºû¥Lª´ºÀ¯ïªK¯ù",
-      "entity.ygmelonmilkentity.name": "¶§¥ú»e¥Ê¨§¥¤",
       "item.vitasugarcanejuice.name": "ºû¥L¥Ì½©¥Ä",
+      "entity.ygmelonmilkentity.name": "¶§¥ú»e¥Ê¨§¥¤",
       "item.vita_chinese_pear_tea.name": "ºû¥L¤ô´¹±ù¯ù",
       "entity.vitalemonteaentity.name": "ºû¥LÂfÂc¯ù",
       "entity.vitaguavajuiceentity.name": "ºû¥Lµf¥Ûºh¥Ä",
@@ -4885,6 +4981,7 @@
       "entity.ygorangejuiceentity.name": "¶§¥ú¾í¥Ä",
       "item.hftmandarinaloe.name": "ÂEºÖ°ó¬a®ÜÄªîP",
       "entity.taotimetateaentity.name": "¹D¦a·¥«~¸Ñ¯ù",
+      "item.vita_strawberry_soya_milk.name": "ºû¥L¤h¦h°à±ù¨§¥¤",
       "item.vitamaltsoyamilk.name": "ºû¥L³Áºë¨§¥¤",
       "item.vita_cookies_cream_soya_milk.name": "ºû¥L¦¶¥j¤O¦±©_¨ý¨§¥¤",
       "item.vitaguavajuice.name": "ºû¥Lµf¥Ûºh¥Ä",
@@ -4923,6 +5020,7 @@
       "entity.ygpeachteaentity.name": "¶§¥ú»e®ç¯ù",
       "item.yeunggwonglemontea.name": "¶§¥úÂfÂc¯ù",
       "itemGroup.tabhongkongdrinks": "­»´ä¶¼«~",
+      "entity.vita_strawberry_soya_milk_entity.name": "ºû¥L¤h¦h°à±ù¨§¥¤",
       "entity.ygmangojuiceentity.name": "¶§¥ú¨~ªG¥Ä",
       "item.vitamintchocosoyamilk.name": "ºû¥LÁ¡²ü¦¶¥j¤O¨ý¨§¥¤",
       "item.vitacoconutsoyamilk.name": "ºû¥L·¦¤l¨§¥¤",
@@ -4990,6 +5088,7 @@
       "entity.ygorangejuiceentity.name": "Yeung Gwong Orange Juice",
       "item.hftmandarinaloe.name": "Hung Fook Tong Mandarin Juice With Aloe Drink",
       "entity.taotimetateaentity.name": "Tao Ti Supreme Meta Tea",
+      "item.vita_strawberry_soya_milk.name": "Vita Strawberry Soya Milk",
       "item.vitamaltsoyamilk.name": "Vita Malted Soya Milk",
       "item.vita_cookies_cream_soya_milk.name": "Vita Cookies\u0027n Cream Soya Milk",
       "item.vitaguavajuice.name": "Vita Guava Juice",
@@ -5028,6 +5127,7 @@
       "entity.ygpeachteaentity.name": "Yeung Gwong Peach Tea",
       "item.yeunggwonglemontea.name": "Yeung Gwong Lemon Tea",
       "itemGroup.tabhongkongdrinks": "Hong Kong Drinks",
+      "entity.vita_strawberry_soya_milk_entity.name": "Vita Strawberry Soya Milk",
       "entity.ygmangojuiceentity.name": "Yeung Gwong Mango Juice",
       "item.vitamintchocosoyamilk.name": "Vita Mint Chocolate Soya Milk",
       "item.vitacoconutsoyamilk.name": "Vita Coconut Soya Milk",
