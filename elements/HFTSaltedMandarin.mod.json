@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "hftsaltmandarin_item",
-    "customModelName": "hungfooktong:hftsaltmandarin",
+    "customModelName": "hungfooktong:default",
     "name": "Hung Fook Tong Salted Mandarin Drink",
     "specialInfo": [],
     "creativeTab": {

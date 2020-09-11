@@ -27,7 +27,7 @@ public class ItemTaoTiOolongTea extends ElementsHongkongdrinksMod.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:taotioolongtea")
 	public static final Item block = null;
 	public ItemTaoTiOolongTea(ElementsHongkongdrinksMod instance) {
-		super(instance, 34);
+		super(instance, 45);
 	}
 
 	@Override

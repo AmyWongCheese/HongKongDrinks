@@ -27,7 +27,7 @@ public class ItemHealthworksHawhornAppleDrink extends ElementsHongkongdrinksMod.
 	@GameRegistry.ObjectHolder("hongkongdrinks:healthworkshawhornappledrink")
 	public static final Item block = null;
 	public ItemHealthworksHawhornAppleDrink(ElementsHongkongdrinksMod instance) {
-		super(instance, 38);
+		super(instance, 49);
 	}
 
 	@Override

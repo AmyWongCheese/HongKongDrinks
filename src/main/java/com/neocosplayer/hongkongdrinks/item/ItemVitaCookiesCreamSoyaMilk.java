@@ -27,7 +27,7 @@ public class ItemVitaCookiesCreamSoyaMilk extends ElementsHongkongdrinksMod.ModE
 	@GameRegistry.ObjectHolder("hongkongdrinks:vita_cookies_cream_soya_milk")
 	public static final Item block = null;
 	public ItemVitaCookiesCreamSoyaMilk(ElementsHongkongdrinksMod instance) {
-		super(instance, 246);
+		super(instance, 13);
 	}
 
 	@Override

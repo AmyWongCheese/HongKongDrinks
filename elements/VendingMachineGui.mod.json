@@ -97,6 +97,9 @@
           "id": 4,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "DrinkTakenSlot4"
+          },
           "name": "Slot #4",
           "x": 213,
           "y": 30

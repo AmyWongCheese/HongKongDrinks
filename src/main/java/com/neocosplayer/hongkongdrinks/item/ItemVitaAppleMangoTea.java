@@ -27,7 +27,7 @@ public class ItemVitaAppleMangoTea extends ElementsHongkongdrinksMod.ModElement 
 	@GameRegistry.ObjectHolder("hongkongdrinks:vita_apple_mango_tea")
 	public static final Item block = null;
 	public ItemVitaAppleMangoTea(ElementsHongkongdrinksMod instance) {
-		super(instance, 236);
+		super(instance, 25);
 	}
 
 	@Override

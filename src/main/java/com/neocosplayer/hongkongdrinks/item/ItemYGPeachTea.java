@@ -27,7 +27,7 @@ public class ItemYGPeachTea extends ElementsHongkongdrinksMod.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:ygpeachtea")
 	public static final Item block = null;
 	public ItemYGPeachTea(ElementsHongkongdrinksMod instance) {
-		super(instance, 21);
+		super(instance, 32);
 	}
 
 	@Override

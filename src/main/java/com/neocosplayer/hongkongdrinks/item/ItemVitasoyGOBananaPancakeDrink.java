@@ -27,7 +27,7 @@ public class ItemVitasoyGOBananaPancakeDrink extends ElementsHongkongdrinksMod.M
 	@GameRegistry.ObjectHolder("hongkongdrinks:vitasoy_go_banana_pancake_drink")
 	public static final Item block = null;
 	public ItemVitasoyGOBananaPancakeDrink(ElementsHongkongdrinksMod instance) {
-		super(instance, 241);
+		super(instance, 12);
 	}
 
 	@Override

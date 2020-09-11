@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "vitamango_item",
-    "customModelName": "vitalemontea1:vitamango",
+    "customModelName": "vitalemontea1:default",
     "name": "Vita Mango Juice",
     "specialInfo": [],
     "creativeTab": {

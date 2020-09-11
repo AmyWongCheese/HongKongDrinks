@@ -34,6 +34,7 @@ import java.io.IOException;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureInputCoin;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureDrinkTakenSlot8;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureDrinkTakenSlot6;
+import com.neocosplayer.hongkongdrinks.procedure.ProcedureDrinkTakenSlot4;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureDrinkTakenSlot2;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureDrinkTakenSlot18;
 import com.neocosplayer.hongkongdrinks.procedure.ProcedureDrinkTakenSlot16;
@@ -72,19 +73,20 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
-			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 81, 62) {
+			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 161, 121) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Items.EMERALD, (int) (1)).getItem() == stack.getItem());
 				}
 			}));
-			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 10, 15) {
+			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 19, 28) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
+
 			}));
-			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 19, 15) {
+			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 37, 28) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -97,25 +99,32 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 42, 15) {
+			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 82, 28) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 51, 15) {
+			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 100, 28) {
+				@Override
+				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(4, 1, 0);
+					return retval;
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(5, this.addSlotToContainer(new Slot(internal, 5, 73, 15) {
+			this.customSlots.put(5, this.addSlotToContainer(new Slot(internal, 5, 145, 28) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(6, this.addSlotToContainer(new Slot(internal, 6, 82, 15) {
+			this.customSlots.put(6, this.addSlotToContainer(new Slot(internal, 6, 163, 28) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -128,13 +137,13 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(7, this.addSlotToContainer(new Slot(internal, 7, 10, 29) {
+			this.customSlots.put(7, this.addSlotToContainer(new Slot(internal, 7, 19, 55) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(8, this.addSlotToContainer(new Slot(internal, 8, 19, 29) {
+			this.customSlots.put(8, this.addSlotToContainer(new Slot(internal, 8, 37, 55) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -147,13 +156,13 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(9, this.addSlotToContainer(new Slot(internal, 9, 42, 29) {
+			this.customSlots.put(9, this.addSlotToContainer(new Slot(internal, 9, 82, 55) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(10, this.addSlotToContainer(new Slot(internal, 10, 51, 29) {
+			this.customSlots.put(10, this.addSlotToContainer(new Slot(internal, 10, 100, 55) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -166,13 +175,13 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(11, this.addSlotToContainer(new Slot(internal, 11, 73, 29) {
+			this.customSlots.put(11, this.addSlotToContainer(new Slot(internal, 11, 145, 55) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(12, this.addSlotToContainer(new Slot(internal, 12, 82, 29) {
+			this.customSlots.put(12, this.addSlotToContainer(new Slot(internal, 12, 163, 55) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -185,13 +194,13 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(13, this.addSlotToContainer(new Slot(internal, 13, 10, 43) {
+			this.customSlots.put(13, this.addSlotToContainer(new Slot(internal, 13, 19, 84) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(14, this.addSlotToContainer(new Slot(internal, 14, 19, 43) {
+			this.customSlots.put(14, this.addSlotToContainer(new Slot(internal, 14, 37, 84) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -204,13 +213,13 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(15, this.addSlotToContainer(new Slot(internal, 15, 42, 43) {
+			this.customSlots.put(15, this.addSlotToContainer(new Slot(internal, 15, 82, 84) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(16, this.addSlotToContainer(new Slot(internal, 16, 51, 43) {
+			this.customSlots.put(16, this.addSlotToContainer(new Slot(internal, 16, 100, 84) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -223,13 +232,13 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(17, this.addSlotToContainer(new Slot(internal, 17, 73, 43) {
+			this.customSlots.put(17, this.addSlotToContainer(new Slot(internal, 17, 145, 84) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(18, this.addSlotToContainer(new Slot(internal, 18, 82, 43) {
+			this.customSlots.put(18, this.addSlotToContainer(new Slot(internal, 18, 163, 84) {
 				@Override
 				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
 					ItemStack retval = super.onTake(entity, stack);
@@ -246,9 +255,9 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlotToContainer(new Slot(player.inventory, sj + (si + 1) * 9, 38 + 8 + sj * 18, 24 + 84 + si * 18));
+					this.addSlotToContainer(new Slot(player.inventory, sj + (si + 1) * 9, 12 + 8 + sj * 18, 64 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlotToContainer(new Slot(player.inventory, si, 38 + 8 + si * 18, 24 + 142));
+				this.addSlotToContainer(new Slot(player.inventory, si, 12 + 8 + si * 18, 64 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -407,8 +416,8 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			this.y = y;
 			this.z = z;
 			this.entity = entity;
-			this.xSize = 100;
-			this.ySize = 118;
+			this.xSize = 200;
+			this.ySize = 235;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("hongkongdrinks:textures/vending_machine_gui.png");
 		@Override
@@ -420,11 +429,11 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			this.mc.renderEngine.bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
+			this.drawModalRectWithCustomSizedTexture(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			zLevel = 100.0F;
 		}
 
@@ -445,7 +454,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Vending Machine", 32, 5, -12829636);
+			this.fontRenderer.drawString("Vending Machine", 63, 9, -12829636);
 		}
 
 		@Override
@@ -457,11 +466,11 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		@Override
 		public void initGui() {
 			super.initGui();
-			this.guiLeft = (this.width - 100) / 2;
-			this.guiTop = (this.height - 118) / 2;
+			this.guiLeft = (this.width - 200) / 2;
+			this.guiTop = (this.height - 235) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButton(0, this.guiLeft + 58, this.guiTop + 60, 20, 10, "Buy"));
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 116, this.guiTop + 119, 40, 20, "Buy"));
 		}
 
 		@Override
@@ -578,7 +587,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			return;
 		if (buttonID == 0) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -596,7 +605,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			return;
 		if (slotID == 2 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -605,9 +614,20 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 				ProcedureDrinkTakenSlot2.executeProcedure($_dependencies);
 			}
 		}
+		if (slotID == 4 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureDrinkTakenSlot4.executeProcedure($_dependencies);
+			}
+		}
 		if (slotID == 6 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -618,7 +638,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		}
 		if (slotID == 8 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -629,7 +649,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		}
 		if (slotID == 10 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -640,7 +660,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		}
 		if (slotID == 12 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -651,7 +671,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		}
 		if (slotID == 14 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -662,7 +682,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		}
 		if (slotID == 16 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -673,7 +693,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 		}
 		if (slotID == 18 && changeType == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);

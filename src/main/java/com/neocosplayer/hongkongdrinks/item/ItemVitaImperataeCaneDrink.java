@@ -27,7 +27,7 @@ public class ItemVitaImperataeCaneDrink extends ElementsHongkongdrinksMod.ModEle
 	@GameRegistry.ObjectHolder("hongkongdrinks:vitaimperataecanedrink")
 	public static final Item block = null;
 	public ItemVitaImperataeCaneDrink(ElementsHongkongdrinksMod instance) {
-		super(instance, 17);
+		super(instance, 27);
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class ProcedureInputCoin extends ElementsHongkongdrinksMod.ModElement {
 		super(instance, 290);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure InputCoin!");
 			return;

@@ -27,7 +27,7 @@ public class ItemHFTPassionFruit extends ElementsHongkongdrinksMod.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:hftpassionfruit")
 	public static final Item block = null;
 	public ItemHFTPassionFruit(ElementsHongkongdrinksMod instance) {
-		super(instance, 43);
+		super(instance, 54);
 	}
 
 	@Override

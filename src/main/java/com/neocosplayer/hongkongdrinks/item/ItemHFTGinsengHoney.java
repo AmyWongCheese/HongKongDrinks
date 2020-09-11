@@ -27,7 +27,7 @@ public class ItemHFTGinsengHoney extends ElementsHongkongdrinksMod.ModElement {
 	@GameRegistry.ObjectHolder("hongkongdrinks:hftginsenghoney")
 	public static final Item block = null;
 	public ItemHFTGinsengHoney(ElementsHongkongdrinksMod instance) {
-		super(instance, 41);
+		super(instance, 52);
 	}
 
 	@Override
