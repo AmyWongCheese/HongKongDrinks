@@ -101,7 +101,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 82, 28) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -120,7 +120,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(5, this.addSlotToContainer(new Slot(internal, 5, 145, 28) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -139,7 +139,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(7, this.addSlotToContainer(new Slot(internal, 7, 19, 55) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -158,7 +158,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(9, this.addSlotToContainer(new Slot(internal, 9, 82, 55) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -177,7 +177,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(11, this.addSlotToContainer(new Slot(internal, 11, 145, 55) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -196,7 +196,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(13, this.addSlotToContainer(new Slot(internal, 13, 19, 84) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -215,7 +215,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(15, this.addSlotToContainer(new Slot(internal, 15, 82, 84) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
@@ -234,7 +234,7 @@ public class GuiVendingMachineGui extends ElementsHongkongdrinksMod.ModElement {
 			}));
 			this.customSlots.put(17, this.addSlotToContainer(new Slot(internal, 17, 145, 84) {
 				@Override
-				public boolean isItemValid(ItemStack stack) {
+				public boolean canTakeStack(EntityPlayer player) {
 					return false;
 				}
 			}));
