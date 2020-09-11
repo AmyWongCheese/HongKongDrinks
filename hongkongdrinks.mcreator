@@ -1,7 +1,7 @@
 {
   "id_map": {
     "ENTITY": 116,
-    "GUI": 1
+    "GUI": 3
   },
   "mod_elements": [
     {
@@ -5131,6 +5131,389 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_tiramisu_drink_girl_cbcraft"
+    },
+    {
+      "name": "InputCoin",
+      "type": "procedure",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "input_coin",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VendingMachineGui",
+      "type": "gui",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3
+      },
+      "registry_name": "vending_machine_gui"
+    },
+    {
+      "name": "VendingMachineOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vending_machine_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VendingMachine",
+      "type": "block",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vending_machine"
+    },
+    {
+      "name": "DrinkTakenSlot2",
+      "type": "procedure",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot4",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot6",
+      "type": "procedure",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot8",
+      "type": "procedure",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_8",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot10",
+      "type": "procedure",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_10",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot12",
+      "type": "procedure",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_12",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot14",
+      "type": "procedure",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_14",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot16",
+      "type": "procedure",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_16",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrinkTakenSlot18",
+      "type": "procedure",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_taken_slot_18",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -5148,8 +5531,8 @@
       "entity.vitachocomilkentity.name": "維他朱古力奶",
       "entity.healthworkshawhornappledrinkentity.name": "健康工房山楂蘋果",
       "entity.vitasoyamilkentity.name": "維他奶",
-      "item.ygsugarcanejuice.name": "陽光蔗汁飲品",
       "entity.vitaimperataecanedrinkentity.name": "清心棧竹蔗茅根",
+      "item.ygsugarcanejuice.name": "陽光蔗汁飲品",
       "entity.vitamangojuiceentity.name": "維他芒果汁",
       "item.taotigrapejuice.name": "道地巨峰提子汁",
       "item.vitachocolatemilk.name": "維他朱古力奶",
@@ -5157,8 +5540,8 @@
       "item.vita_tiramisu_drink_boy.name": "維他意大利芝士餅味豆奶",
       "entity.vitablackcurrantjuiceentity.name": "維他黑加侖子汁",
       "item.vita_lychee_love_tea.name": "維他玫瑰荔枝茶",
-      "item.vitasugarcanejuice.name": "維他甘蔗汁",
       "entity.ygmelonmilkentity.name": "陽光蜜瓜豆奶",
+      "item.vitasugarcanejuice.name": "維他甘蔗汁",
       "item.vita_chinese_pear_tea.name": "維他水晶梨茶",
       "entity.vitalemonteaentity.name": "維他檸檬茶",
       "entity.vitaguavajuiceentity.name": "維他番石榴汁",
@@ -5201,6 +5584,7 @@
       "item.hftpassionfruit.name": "鴻福堂百香果蜜",
       "entity.hftpassionfruitentity.name": "鴻福堂百香果蜜",
       "item.vita_apple_mango_tea.name": "維他果然系蘋果芒果茶",
+      "tile.vending_machine.name": "Vending Machine",
       "item.hftsaltedmandarin.name": "鴻福堂咸柑桔",
       "item.taotioolongtea.name": "道地極品烏龍茶",
       "entity.vita_tiramisu_drink_girl_entity.name": "維他意大利芝士餅味豆奶",
@@ -5259,8 +5643,8 @@
       "entity.vitachocomilkentity.name": "Vita Chocolate Milk",
       "entity.healthworkshawhornappledrinkentity.name": "Healthworks Hawhorn Apple Drink",
       "entity.vitasoyamilkentity.name": "Vita Soya Milk",
-      "entity.vitaimperataecanedrinkentity.name": "Vita Imperatae Cane Drink",
       "item.ygsugarcanejuice.name": "Yeung Gwong Sugarcane Juice",
+      "entity.vitaimperataecanedrinkentity.name": "Vita Imperatae Cane Drink",
       "entity.vitamangojuiceentity.name": "Vita Mango Juice",
       "item.taotigrapejuice.name": "Tao Ti Kyoho Grape Juice",
       "item.vitachocolatemilk.name": "Vita Chocolate Milk",
@@ -5268,8 +5652,8 @@
       "item.vita_tiramisu_drink_boy.name": "Vita Tiramisu Drink",
       "entity.vitablackcurrantjuiceentity.name": "Vita Blackcurrant Juice",
       "item.vita_lychee_love_tea.name": "Vita Lychee Love Tea",
-      "entity.ygmelonmilkentity.name": "Yeung Gwong Melon Flavored Soya Milk",
       "item.vitasugarcanejuice.name": "Vita Sugarcane Juice",
+      "entity.ygmelonmilkentity.name": "Yeung Gwong Melon Flavored Soya Milk",
       "item.vita_chinese_pear_tea.name": "Vita Chinese Pear Tea",
       "entity.vitalemonteaentity.name": "Vita Lemon Tea",
       "entity.vitaguavajuiceentity.name": "Vita Guava Juice",
@@ -5312,6 +5696,7 @@
       "item.hftpassionfruit.name": "Hung Fook Tong Passion Fruit with Honey Drink",
       "entity.hftpassionfruitentity.name": "Hung Fook Tong Passion Fruit with Honey Drink",
       "item.vita_apple_mango_tea.name": "Vita Apple Mango Tea",
+      "tile.vending_machine.name": "Vending Machine",
       "item.hftsaltedmandarin.name": "Hung Fook Tong Salted Mandarin Drink",
       "item.taotioolongtea.name": "Tao Ti Supreme Oolong Tea",
       "entity.vita_tiramisu_drink_girl_entity.name": "Vita Tiramisu Drink",
@@ -5376,5 +5761,5 @@
     "modElementsPackage": "com.neocosplayer.hongkongdrinks",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000432115
+  "mcreatorVersion": 202000535716
 }
