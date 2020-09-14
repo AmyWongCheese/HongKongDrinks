@@ -319,7 +319,7 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 					}
 				}
 			}
-		} else if (((((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+		} else if ((((((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 				.equals(new ResourceLocation("forest")))
 				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("forest_hills"))))
@@ -327,8 +327,16 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 						.equals(new ResourceLocation("birch_forest")))
 						|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("birch_forest_hills")))))
+				|| (((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						.equals(new ResourceLocation("roofed_forest")))
+						|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								.equals(new ResourceLocation("mutated_roofed_forest"))))
+						|| ((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								.equals(new ResourceLocation("mutated_birch_forest")))
+								|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+										.equals(new ResourceLocation("mutated_birch_forest_hills"))))))
 				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-						.equals(new ResourceLocation("roofed_forest"))))) {
+						.equals(new ResourceLocation("mutated_forest"))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
@@ -437,8 +445,10 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 					}
 				}
 			}
-		} else if ((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-				.equals(new ResourceLocation("swampland")))) {
+		} else if (((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+				.equals(new ResourceLocation("swampland")))
+				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						.equals(new ResourceLocation("mutated_swampland"))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
@@ -547,8 +557,9 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 					}
 				}
 			}
-		} else if ((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-				.equals(new ResourceLocation("plains")))) {
+		} else if (((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z))).equals(new ResourceLocation("plains")))
+				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						.equals(new ResourceLocation("mutated_plains"))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
@@ -657,8 +668,9 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 					}
 				}
 			}
-		} else if ((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-				.equals(new ResourceLocation("jungle")))) {
+		} else if (((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z))).equals(new ResourceLocation("jungle")))
+				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						.equals(new ResourceLocation("mutated_jungle"))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
@@ -877,8 +889,10 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 					}
 				}
 			}
-		} else if ((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-				.equals(new ResourceLocation("jungle_edge")))) {
+		} else if (((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+				.equals(new ResourceLocation("jungle_edge")))
+				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						.equals(new ResourceLocation("mutated_jungle_edge"))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
@@ -987,12 +1001,19 @@ public class ProcedureVendingMachineOnBlockRightClicked extends ElementsHongkong
 					}
 				}
 			}
-		} else if ((((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z))).equals(new ResourceLocation("desert")))
+		} else if (((((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+				.equals(new ResourceLocation("desert")))
 				|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("desert_hills"))))
 				|| ((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z))).equals(new ResourceLocation("savanna")))
 						|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-								.equals(new ResourceLocation("savanna_rock")))))) {
+								.equals(new ResourceLocation("savanna_rock")))))
+				|| (((Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						.equals(new ResourceLocation("mutated_desert")))
+						|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								.equals(new ResourceLocation("mutated_savanna"))))
+						|| (Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								.equals(new ResourceLocation("mutated_savanna_rock")))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
